@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mixtape Miles
+
+A travel blog that collects songs and stories from strangers encountered during road trips across America. Each journey has a unique musical theme, creating collaborative playlists that capture the places visited and the people met along the way.
+
+## Current Journey: Berkeley to Oregon
+
+**Theme:** What is a song that reminds you of growing up?
+
+We're hitting the road from Berkeley, California to Portland, Oregon, asking strangers about the songs that shaped their childhood. Each person we meet adds a new track to our collaborative road trip playlist.
+
+## Features
+
+- **Home Page:** Showcases our current journey with featured song stories
+- **Trip Archive:** Browse past and upcoming musical journeys
+- **About Page:** Learn about the Mixtape Miles concept and mission
+- **Responsive Design:** Works beautifully on all devices
+
+## Tech Stack
+
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/yourusername/mixtape-miles.git
+cd mixtape-miles
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/src/app` - The main application source code
+  - `/page.tsx` - Home page
+  - `/about/page.tsx` - About page
+  - `/trips/page.tsx` - Trips archive page
+- `/public` - Static assets
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+The blog theme is customizable via the globals.css file, which contains CSS variables for primary colors, fonts, and other design elements.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Deploy on Vercel
+## Contact
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For questions or collaboration opportunities, please reach out at hello@mixtapemiles.com
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+*Connecting through music, one mile at a time.*
