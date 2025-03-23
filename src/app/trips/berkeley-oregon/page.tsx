@@ -10,7 +10,8 @@ export const metadata = {
   description: 'Explore the stories and songs collected during our Berkeley to Oregon road trip in March 2025.'
 };
 
-export default function BerkeleyOregonPage() {
+export default async function BerkeleyOregonPage() {
+  // We're not using params or searchParams in this page
   const berekeleyOregonStories = getStoriesByJourney('Berkeley-Oregon Road Trip');
   
   return (

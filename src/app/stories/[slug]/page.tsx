@@ -7,15 +7,15 @@ import { getStoryBySlug, storiesData } from '@/data/stories';
 import type { Metadata } from 'next';
 
 type StoryPageProps = {
-  params: {
-    slug: string;
-  };
+  params: Promise<{ slug: string }>;
+  searchParams?: Promise<Record<string, string | string[] | undefined>>;
 };
 
 export async function generateMetadata(
-  { params }: StoryPageProps
+  props: StoryPageProps
 ): Promise<Metadata> {
-  const story = getStoryBySlug(params.slug);
+  const { slug } = await props.params;
+  const story = getStoryBySlug(slug);
   if (!story) {
     return {
       title: 'Story Not Found - Mixtape Miles',
@@ -34,8 +34,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function StoryPage({ params }: StoryPageProps) {
-  const story = getStoryBySlug(params.slug);
+export default async function StoryPage(props: StoryPageProps) {
+  const { slug } = await props.params;
+  const story = getStoryBySlug(slug);
 
   if (!story) {
     notFound();
