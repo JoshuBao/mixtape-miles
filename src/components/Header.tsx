@@ -29,11 +29,11 @@ export default function Header() {
                 Stories
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/contact" className="hover:text-gray-200">
                 Contact
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

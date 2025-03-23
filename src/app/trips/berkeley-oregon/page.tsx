@@ -43,13 +43,13 @@ export default function BerkeleyOregonPage() {
           <div className="prose max-w-none mb-12 text-gray-700 dark:text-gray-300">
             <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">About This Journey</h2>
             <p>
-              From the vibrant streets of Berkeley to the lush forests of Oregon, we're traveling up the Pacific Coast, 
+              From the vibrant streets of Berkeley to the lush forests of Oregon, we&apos;re traveling up the Pacific Coast, 
               meeting locals and fellow travelers along the way. Our journey takes us through charming coastal towns, 
               majestic redwood forests, and everything in between.
             </p>
             <p>
-              Throughout our adventure, we've been asking people we meet a simple question: 
-              "What is a song that reminds you of growing up?" The answers have been as diverse and fascinating as 
+              Throughout our adventure, we&apos;ve been asking people we meet a simple question: 
+              &quot;What is a song that reminds you of growing up?&quot; The answers have been as diverse and fascinating as 
               the people themselves, creating a rich tapestry of musical memories that span generations and genres.
             </p>
             <p>

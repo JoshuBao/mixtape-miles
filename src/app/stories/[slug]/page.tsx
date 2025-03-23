@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getStoryBySlug, storiesData } from '@/data/stories';
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 
 type StoryPageProps = {
   params: {
@@ -13,8 +13,7 @@ type StoryPageProps = {
 };
 
 export async function generateMetadata(
-  { params }: StoryPageProps,
-  parent: ResolvingMetadata
+  { params }: StoryPageProps
 ): Promise<Metadata> {
   const story = getStoryBySlug(params.slug);
   if (!story) {

@@ -18,7 +18,7 @@ export default function ContactPage() {
           
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-8">
             Have a song story to share? Want to suggest a journey? Or just want to say hello?
-            We'd love to hear from you!
+            We&apos;d love to hear from you!
           </p>
           
           <ContactForm />

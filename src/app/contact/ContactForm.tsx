@@ -141,7 +141,7 @@ export default function ContactForm() {
           <option value="">Select a subject</option>
           <option value="share-story">I want to share my song story</option>
           <option value="suggest-journey">I have a journey suggestion</option>
-          <option value="collaboration">I'd like to collaborate</option>
+          <option value="collaboration">I&apos;d like to collaborate</option>
           <option value="other">Other</option>
         </select>
       </div>
@@ -179,7 +179,7 @@ export default function ContactForm() {
       
       {formState === 'success' && (
         <div className="p-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg">
-          Thank you for your message! We'll get back to you soon.
+          Thank you for your message! We&apos;ll get back to you soon.
         </div>
       )}
       
