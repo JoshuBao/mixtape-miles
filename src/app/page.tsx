@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
@@ -40,10 +39,10 @@ export default function Home() {
             Songs That Shaped Us
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            A musical journey from Berkeley to Oregon, collecting songs that remind people of growing up.
+            Collecting the soundtrack of our journeys by asking travelers and locals about the music that defines their lives.
           </p>
           <button className="bg-white text-purple-600 font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition duration-300">
-            Explore the Playlist
+            Explore the Playlists
           </button>
         </div>
         <div className="absolute inset-0 z-0">
@@ -55,7 +54,7 @@ export default function Home() {
       <section className="py-16 px-6 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">
-            Current Journey: Berkeley to Oregon
+            Current Journey: West Coast Adventure
           </h2>
           
           <div className="bg-white dark:bg-gray-900 shadow-lg rounded-lg overflow-hidden">
@@ -77,13 +76,13 @@ export default function Home() {
                   What is a song that reminds you of growing up?
                 </h3>
                 <p className="mt-4 text-gray-600 dark:text-gray-300">
-                  We're hitting the road from Berkeley, California to Portland, Oregon, 
-                  asking strangers about the songs that shaped their childhood. Each person 
-                  we meet adds a new track to our collaborative road trip playlist.
+                  From Berkeley to Portland, we&apos;re traveling up the Pacific Coast, meeting locals and fellow travelers, 
+                  asking about the songs that shaped their childhood. Each person 
+                  we meet adds a new track to our collaborative journey playlist.
                 </p>
                 <div className="mt-6">
                   <div className="text-gray-700 dark:text-gray-300 font-bold">Current Playlist: 14 songs</div>
-                  <div className="mt-2 text-gray-600 dark:text-gray-400">Last addition: "Dreams" by Fleetwood Mac - Emily from Ashland, OR</div>
+                  <div className="mt-2 text-gray-600 dark:text-gray-400">Last addition: &quot;Dreams&quot; by Fleetwood Mac - Emily from Ashland, OR</div>
                 </div>
               </div>
             </div>
@@ -109,13 +108,13 @@ export default function Home() {
               <div className="p-6">
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Day 4 - Redding, CA</div>
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                  "Come As You Are" - Nirvana
+                  &quot;Come As You Are&quot; - Nirvana
                 </h3>
                 <div className="mb-4 text-indigo-500 font-semibold">John, 42</div>
                 <p className="text-gray-600 dark:text-gray-300">
-                  "I was 14 when this came out. It was the first time I felt like music was speaking directly to me. 
+                  &quot;I was 14 when this came out. It was the first time I felt like music was speaking directly to me. 
                   I grew up in a small town where everyone knew your business and judged you for it. This song told 
-                  me it was okay to just be myself."
+                  me it was okay to just be myself.&quot;
                 </p>
               </div>
             </div>
@@ -130,13 +129,13 @@ export default function Home() {
               <div className="p-6">
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Day 3 - Mount Shasta, CA</div>
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                  "California Love" - 2Pac
+                  &quot;California Love&quot; - 2Pac
                 </h3>
                 <div className="mb-4 text-indigo-500 font-semibold">Maria, 37</div>
                 <p className="text-gray-600 dark:text-gray-300">
-                  "Growing up in LA in the 90s, this song was the soundtrack to every block party. 
+                  &quot;Growing up in LA in the 90s, this song was the soundtrack to every block party. 
                   It reminds me of summer nights, my cousins visiting, and feeling like our neighborhood 
-                  was the center of the universe."
+                  was the center of the universe.&quot;
                 </p>
               </div>
             </div>
@@ -151,13 +150,13 @@ export default function Home() {
               <div className="p-6">
                 <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Day 2 - Chico, CA</div>
                 <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                  "Fast Car" - Tracy Chapman
+                  &quot;Fast Car&quot; - Tracy Chapman
                 </h3>
                 <div className="mb-4 text-indigo-500 font-semibold">David, 55</div>
                 <p className="text-gray-600 dark:text-gray-300">
-                  "This song played on the radio the day I left home at 18. I had $200 in my pocket 
-                  and a tank of gas. Every time I hear it, I'm reminded of that feeling of both fear and 
-                  freedom, driving into the unknown."
+                  &quot;This song played on the radio the day I left home at 18. I had $200 in my pocket 
+                  and a tank of gas. Every time I hear it, I&apos;m reminded of that feeling of both fear and 
+                  freedom, driving into the unknown.&quot;
                 </p>
               </div>
             </div>
@@ -178,7 +177,7 @@ export default function Home() {
             <div className="mb-6 md:mb-0">
               <h2 className="text-2xl font-bold">Mixtape Miles</h2>
               <p className="mt-2 text-gray-400">
-                Connecting through music, one mile at a time.
+                Connecting through music, one journey at a time.
               </p>
             </div>
             <div className="flex space-x-6">

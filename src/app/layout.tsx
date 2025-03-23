@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Mixtape Miles",
-  description: "Collecting songs and stories from strangers on road trips across America",
+  description: "Collecting songs and stories from strangers during travel adventures around the world",
 };
 
 export default function RootLayout({
