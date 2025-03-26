@@ -128,6 +128,28 @@ Now a high school senior, Angel plans to attend community college and dreams of 
     emoji: '🍺',
     slug: 'angel-marquez',
     theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '8',
+    personName: 'Sara, Alan, and Coco',
+    songTitle: 'Three Little Birds / Sloop John B / Stayin\' Alive',
+    artist: 'Bob Marley / The Beach Boys / Bee Gees',
+    location: 'Rocky Overlook, Oregon Coast',
+    shortStory: 'We met this family during our coastal hike in Oregon. Each had their own song: Sara with Bob Marley\'s road trip anthem, Alan with the first song he learned on guitar, and 14-year-old Coco with the Bee Gees classic that soundtracked their family drives.',
+    fullStory: `We met Sara, Alan, and their daughter Coco at a rocky overlook along the Oregon coast. We had just wrapped up a coastal hike and stopped to take in the view; they were seated nearby, finishing up lunch and admiring the same wide stretch of Pacific horizon. A shared pause in the day turned into a conversation about music, memory, and the songs that stay with us.
+
+Sara&apos;s song was &quot;Three Little Birds&quot; by Bob Marley. Her dad used to play it on loop during their yearly road trips from California down to Baja—a tradition that started when she was just six months old. It wasn&apos;t until she was around seven that she remembers really hearing it, the lyrics settling in as something familiar and comforting. Now a mother herself, she tries to take her own family on that same drive each year, continuing the ritual. Sara is a West Coast-based artist whose work—vibrant, coastal-inspired jewelry and paintings—can be found at sararenedesigns.com. Her art, like the song, feels rooted in sunlight, rhythm, and the joy of simple things.
+
+Alan chose &quot;Sloop John B&quot; by The Beach Boys—the first song he ever learned to play from a guitar songbook. It marked the beginning of a lifelong relationship with music. These days, he plays in an Americana style but has continued his passion for guitar playing. Now working for the US Forest Service, Alan still finds time to play shows and explore music on the side.
+
+Their daughter Coco, 14 years old, picked &quot;Stayin&apos; Alive&quot; by the Bee Gees. She said she loves the beat, and grew up always hearing it on the radio. It marks as a background song to their long drives as a family with the windows down and radio playing.
+
+Three different songs from three different memories, but all part of the same view, the same moment, and one really lovely pause along the road.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 23, 2025',
+    emoji: '🌊',
+    slug: 'sara-alan-coco',
+    theme: 'What is a song that reminds you of growing up?'
   }
 ];
 
