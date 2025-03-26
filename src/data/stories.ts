@@ -76,6 +76,58 @@ He hears and feels more of the elaborate drumming sequences in the songs, bringi
     emoji: '🥁',
     slug: 'joe',
     theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '5',
+    personName: 'James Haug',
+    songTitle: 'Tea For the Tillerman',
+    artist: 'Yusuf/Cat Stevens',
+    location: 'Redwoods, Humboldt County',
+    shortStory: 'At 67, James has had three careers: environmental chemist, fine wine dealer, and now a planning forester for the Yurok Tribe. Originally from St. Louis, his journey took him across the country before settling in California.',
+    fullStory: `We met James while hiking through the redwoods in Humboldt, all of us stopped at a creek trying to find a dry way across. When we asked what song reminded him of growing up, he answered after careful deliberation: &quot;Tea for the Tillerman&quot; by Yusuf / Cat Stevens.
+
+Originally from St. Louis, James always felt drawn to California. His journey took him from college in New England to travels in Europe, then finally to Sebastopol to raise his kids. Now 67, he works as a planning forester for the Yurok Tribe and wears a Triquetra around his neck—a Celtic knot representing the power of the spirit.
+
+James has had three careers: environmental chemist, fine wine dealer for 25 years—including one shipment of 50 cases to the Moscow Air Show—and now, a forester after returning to school later in life. &quot;Tea for the Tillerman&quot; holds it all together for him—a song about transitions, roots, and a life of quiet direction.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 22, 2025',
+    emoji: '🌳',
+    slug: 'james-haug',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '6',
+    personName: 'Chung Li',
+    songTitle: 'Wind',
+    artist: 'Akeboshi',
+    location: 'Redwoods, Humboldt County',
+    shortStory: 'Originally from Chengdu, China, 29-year-old Chung is studying for his doctorate in classical piano at the University of Missouri–Kansas City. The Naruto theme song brings back memories of his childhood.',
+    fullStory: `We ran into Chung Li as he was wobbling on a thin log, as he was, like us, trying to find a way around the flowing creek in the middle of our redwoods hike. He was with James, an old friend from their college days at Humboldt state, whose story you can find above. When asked for a song that reminded him of growing up, Chung quickly whispered, &quot;anime&quot; before pondering through several specifics to conclude on &quot;Wind&quot; by Akeboshi as it was the theme song for Naruto.
+
+Originally from Chengdu, China, Chung is 29 and studying for his doctorate in music at the University of Missouri–Kansas City, focusing on classical piano. Quiet and composed, Chung carries the same kind of calm found in the song he chose—familiar, reflective, and full of memory.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 22, 2025',
+    emoji: '🎹',
+    slug: 'chung-li',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '7',
+    personName: 'Angel Marquez',
+    songTitle: '505',
+    artist: 'Arctic Monkeys',
+    location: 'SeaQuake Brewing, Crescent City',
+    shortStory: 'We met 18-year-old Angel during his first shift as a waiter at SeaQuake Brewing. He discovered "505" during quarantine in 8th grade, introduced to him by a girl named Presley who later rejected him.',
+    fullStory: `We met 18-year-old Angel Marquez at SeaQuake Brewing in Crescent City, California, when we stopped in for a delicious dinner. It was his very first shift as a waiter, though the place already felt like home—his older sibling worked there before him, and his dad still bakes the bread for the menu.
+
+When we asked Angel what song reminded him of growing up, he smiled and said, &quot;505&quot; by Arctic Monkeys. He first heard it in 8th grade during quarantine—a time that, in his words, felt like life just skipped a year. A girl he liked back then, Presley, had introduced him to the track. Though he says she &quot;brutally rejected&quot; him, Angel&apos;s love for the song stuck.
+
+Now a high school senior, Angel plans to attend community college and dreams of transferring to a university in San Diego. As we devoured some of SeaQuake&apos;s crispy Brussels by the Bay (a SeaQuake favorite), Angel shared his hope of becoming a math teacher. &quot;505&quot; lingers in his memory as a song from a strange, in-between time—bittersweet, full of feeling, and still part of the soundtrack to where he&apos;s headed next.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 22, 2025',
+    emoji: '🍺',
+    slug: 'angel-marquez',
+    theme: 'What is a song that reminds you of growing up?'
   }
 ];
 
