@@ -6,7 +6,6 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       animation: {
@@ -27,7 +26,7 @@ module.exports = {
       },
       colors: {
         mixtape: {
-          primary: '#8A4FFF',
+          primary: '#48A6A7',
           secondary: '#FF5A5F',
           tertiary: '#FFB400',
           light: '#F4F7F9',
