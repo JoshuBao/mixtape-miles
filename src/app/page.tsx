@@ -1,8 +1,14 @@
+'use client'
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StoryCard from "@/components/stories/StoryCard";
 import { getRecentStories, storiesData } from "@/data/stories";
+import dynamic from 'next/dynamic';
+
+const MapComponent = dynamic(() => import('@/components/MapComponent'), {
+  ssr: false
+});
 
 export default function Home() {
   const recentStories = getRecentStories();
@@ -29,6 +35,16 @@ export default function Home() {
         </div>
         <div className="absolute inset-0 z-0">
           <div className="w-full h-full bg-cover bg-center" style={{ backgroundImage: "url('/road-trip-bg.jpg')" }}></div>
+        </div>
+      </section>
+
+      {/* Interactive Map Section */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+            Explore Our Journey
+          </h2>
+          <MapComponent />
         </div>
       </section>
 

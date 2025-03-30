@@ -7,6 +7,8 @@ export const storiesData: StoryData[] = [
     songTitle: 'Going to California',
     artist: 'Led Zeppelin',
     location: 'The Daily Grind Espresso Bar, Northern California',
+    latitude: 37.7749,
+    longitude: -122.4194,
     shortStory: 'Originally from Illinois, Benjamin found himself watching the sunset dipping below the Lake Michigan horizon at 27 years old. Recently free from the grips of alcohol, he searched for a new horizon for himself.',
     fullStory: `We met Benjamin as he was taking a quick smoke and espresso break outside of The Daily Grind Espresso Bar. When asked our staple question about a song that reminded him of growing up, Ben answered quickly, a sense of nostalgia passing over him.
 
@@ -27,6 +29,8 @@ Now, settled with his son in Southern Humboldt County, "Going to California" mar
     songTitle: 'Night Moves / Respect',
     artist: 'Bob Seger / Aretha Franklin',
     location: 'Drury-Chaney Trail, Redwoods',
+    latitude: 41.2132,
+    longitude: -124.0046,
     shortStory: 'Mike and Ann from Houston, Texas are on a 4-month road trip through the west coast in their mobile home. Their last trip was 6 months long and went all the way to Alaska!',
     fullStory: `We met Mike and Ann during our hike on the Drury-Chaney Trail, as they were the first people we had run into in about a mile through the redwood canopy. 
 
@@ -47,6 +51,8 @@ Ann loves "Respect" by Aretha Franklin since she always heard it growing up. She
     songTitle: 'Stairway to Heaven',
     artist: 'Led Zeppelin',
     location: 'Antique Store, Old Town Eureka',
+    latitude: 40.8021,
+    longitude: -124.1637,
     shortStory: '71-year-old Gary reminisces about hearing "Stairway to Heaven" as a teenager on his friend Bob Yager\'s record player. He\'s been a fixture in Eureka his entire life.',
     fullStory: `We met 71 year old Gary when exploring the Old Town Eureka area, inside of an antique store, just off the main road. Cluttered with an entourage of antique treasures, we squeezed through the aisles to glance through the bins of pieces before running into Gary. 
 
@@ -65,6 +71,8 @@ Offering more of his story, Gary shared that he has been in Eureka his whole lif
     songTitle: 'White Room',
     artist: 'Cream',
     location: 'Local Store, Eureka',
+    latitude: 40.8021,
+    longitude: -124.1637,
     shortStory: 'Joe heard "White Room" by Cream constantly on the radio throughout his childhood, describing it as "a banger." As a drummer, he now appreciates the elaborate drumming sequences in the song.',
     fullStory: `We met Joe as we passed by another local store in the Eureka area. To our question about a song that reminded him of growing up, Joe gave a quick contemplation before settling on "White Room" by Cream. 
 
@@ -83,6 +91,8 @@ He hears and feels more of the elaborate drumming sequences in the songs, bringi
     songTitle: 'Verde River',
     artist: 'Kassi Valazza',
     location: 'Prairie Creek Redwoods State Park Visitor Center',
+    latitude: 41.2132,
+    longitude: -124.0046,
     shortStory: 'Originally from Prescott, Arizona, 39-year-old Lisa moved to the redwoods five years ago after serving in the military. She chose a song by a fellow Arizonan that reminds her of the landscapes that shaped her.',
     fullStory: `We met Lisa at the Prairie Creek Redwoods State Park Visitor Center while looking for a good trail to hike for the afternoon. Outside, the fields were dotted with elk, and the sound of nearby creeks echoed through the trees, an already magical stop before we even stepped onto the trail.
 
@@ -103,6 +113,8 @@ Originally from Prescott, Arizona, Lisa spent most of her life there before serv
     songTitle: 'Tea For the Tillerman',
     artist: 'Yusuf/Cat Stevens',
     location: 'Redwoods, Humboldt County',
+    latitude: 40.745,
+    longitude: -123.8695,
     shortStory: 'At 67, James has had three careers: environmental chemist, fine wine dealer, and now a planning forester for the Yurok Tribe. Originally from St. Louis, his journey took him across the country before settling in California.',
     fullStory: `We met James while hiking through the redwoods in Humboldt, all of us stopped at a creek trying to find a dry way across. When we asked what song reminded him of growing up, he answered after careful deliberation: "Tea for the Tillerman" by Yusuf / Cat Stevens.
 
@@ -121,6 +133,8 @@ James has had three careers: environmental chemist, fine wine dealer for 25 year
     songTitle: 'Wind',
     artist: 'Akeboshi',
     location: 'Redwoods, Humboldt County',
+    latitude: 40.745,
+    longitude: -123.8695,
     shortStory: 'Originally from Chengdu, China, 29-year-old Chung is studying for his doctorate in classical piano at the University of Missouri–Kansas City. The Naruto theme song brings back memories of his childhood.',
     fullStory: `We ran into Chung Li as he was balancing on top of a thin log as he was, like us, trying to find a way around the flowing creek in the middle of our redwoods hike. He was with James, an old friend from their college days at Humboldt state, whose story you can find above. When asked for a song that reminded him of growing up, Chung quickly whispered, "anime" before pondering through several specifics to conclude on "Wind" by Akeboshi as it was the theme song for Naruto.
 
@@ -137,6 +151,8 @@ Originally from Chengdu, China, Chung is 29 and studying for his doctorate in mu
     songTitle: '505',
     artist: 'Arctic Monkeys',
     location: 'SeaQuake Brewing, Crescent City',
+    latitude: 41.7558,
+    longitude: -124.2017,
     shortStory: 'We met 18-year-old Angel during his first shift as a waiter at SeaQuake Brewing. He discovered "505" during quarantine in 8th grade, introduced to him by a girl named Presley who later rejected him.',
     fullStory: `We met 18-year-old Angel Marquez at SeaQuake Brewing in Crescent City, California, when we stopped in for a delicious dinner. It was his very first shift as a waiter, though the place already felt like home—his older sibling worked there before him, and his dad still bakes the bread for the menu.
 
@@ -155,6 +171,8 @@ Now a high school senior, Angel plans to attend community college and dreams of 
     songTitle: 'Three Little Birds / Sloop John B / Stayin\' Alive',
     artist: 'Bob Marley / The Beach Boys / Bee Gees',
     location: 'Rocky Overlook, Oregon Coast',
+    latitude: 44.6368,
+    longitude: -124.0534,
     shortStory: 'We met this family during our coastal hike in Oregon. Each had their own song: Sara with Bob Marley\'s road trip anthem, Alan with the first song he learned on guitar, and 14-year-old Coco with the Bee Gees classic that soundtracked their family drives.',
     fullStory: `We met Sara, Alan, and their daughter Coco at a rocky overlook along the Oregon coast. We had just wrapped up a coastal hike and stopped to take in the view; they were seated nearby, finishing up lunch and admiring the same wide stretch of Pacific horizon. A shared pause in the day turned into a conversation about music, memory, and the songs that stay with us.
 
@@ -177,6 +195,8 @@ Three different songs from three different memories, but all part of the same vi
     songTitle: 'Old Man / California',
     artist: 'Neil Young / Joni Mitchell',
     location: 'Natural Bridges Viewpoint, Oregon Coast',
+    latitude: 42.2226,
+    longitude: -124.3615,
     shortStory: 'Newly met potential neighbors Linnea and Tracy share songs from their pasts: Linnea\'s life of reinvention across California and Tracy\'s journey from Half Moon Bay to Hawaii, now possibly returning to Oregon.',
     fullStory: `We met Linnea and Tracy at the Natural Bridges Viewpoint on the Oregon Coast. They were standing side by side on the wooden platform overlooking the sea when we crossed paths, stopping to admire the beautiful view before heading out for a short hike. The conversation began with a compliment to Linnea's dog, Numi—a shy rescue mutt she had adopted, name and all, from the Humane Society.
 
@@ -197,6 +217,8 @@ Tracy picked "California" by Joni Mitchell. Raised in Half Moon Bay, she was imm
     songTitle: 'Yellow Brick Road',
     artist: 'Elton John',
     location: 'Prehistoric Gardens Dinosaur Park, Southern Oregon Coast',
+    latitude: 42.2226,
+    longitude: -124.3615,
     shortStory: 'Kiki runs her grandparents\' roadside Dinosaur Park, a family legacy since the 1950s. She\'s lived on the Southern Oregon Coast her entire life and is now looking ahead to retirement and visiting her daughter in London.',
     fullStory: `We met Kiki at the Prehistoric Gardens Dinosaur Park, a roadside gem along the Southern Oregon Coast that caught our eye with its towering T-Rex statue. Curiosity pulled us off the highway and straight into Kiki's gift shop, where she welcomed us with a warm smile and a story that stretched back generations.
 
@@ -217,6 +239,8 @@ After decades of carrying on the family legacy, Kiki is now looking ahead to ret
     songTitle: 'Boondocks',
     artist: 'Little Big Town',
     location: 'Historic Wilson\'s Market, Bandon, Oregon',
+    latitude: 43.1181,
+    longitude: -124.4081,
     shortStory: '32-year-old Ethan has spent most of his life in Bandon, Oregon, working at Wilson\'s Market for the past five years. His chosen song, "Boondocks," perfectly captures his small-town pride and the simple memories of his middle school days.',
     fullStory: `We met Ethan at Historic Wilson's Market in Bandon, Oregon, a small-town staple that has been around since 1932. We had pulled off the road for a quick taco from the deli, and Ethan greeted us with a friendly energy that matched the warm, local vibe of the shop.
 
@@ -237,6 +261,8 @@ Ethan's story is one of familiarity, hard work, and finding joy in the everyday 
     songTitle: 'Close to you',
     artist: 'The Carpenters',
     location: 'Sand Master Park, Florence, Oregon',
+    latitude: 43.9826,
+    longitude: -124.0998,
     shortStory: '24-year-old Ryan works as a sandboarding instructor after five years in Fire/EMS. His chosen song brings back the few precious memories he has with his father from when he was very young.',
     fullStory: `We met Ryan at Sand Master Park in Florence, Oregon, where he was our sandboarding instructor for the afternoon. Easygoing and full of laughter, he felt like someone you could talk to for hours. As the sun dipped beneath the sand and our legs started to give out, we asked him our usual question before taking our last run.
 
@@ -266,6 +292,8 @@ Sometimes a song holds the gentlest part of someone's story. Sometimes the rest 
     songTitle: 'Bridge over Troubled Water',
     artist: 'Simon & Garfunkel',
     location: 'Florence, Oregon',
+    latitude: 43.9826,
+    longitude: -124.0998,
     shortStory: '80-year-old Bill\'s life has taken him from the Peace Corps in Haiti and Bolivia to a career in masonry. His song choice connects to a poignant memory of a friend\'s death at high altitude in Bolivia.',
     fullStory: `We met 80-year-old Bill in the small-town center of Florence, Oregon, right on the edge of the flowing river water. He was selling a car, a red 1990 Buick Reatta V6, a car which he had purchased for his wife, who loved vintage Buicks and "he couldn't say no to her." We ended up talking with Bill for nearly an hour as he gave us valuable life perspective. He spoke slowly and intentionally, painting out details of each memory for us. Bill's life had taken him across trades, continents, and decades of hard work. After college, he served in the Peace Corps, living places such as Haiti and Bolivia. He also developed a clear passion and skillful knowledge for masonry, something he spoke about with pride, his stories full of craftmanship and care.  
 
@@ -286,6 +314,8 @@ For Bill, "Bridge Over Troubled Water" holds it all: youth, friendship, loss, fi
     songTitle: 'Our House',
     artist: 'Madness',
     location: 'Gluten Free Gem, Portland',
+    latitude: 45.5051,
+    longitude: -122.675,
     shortStory: 'Greta\'s family started their gluten-free bakery after her sister was diagnosed with celiac disease. Her childhood song reminds her of jumping on her parents\' beds with her sister - the same sister who inspired the bakery\'s founding.',
     fullStory: `We met Greta at "Gluten Free Gem," a cheerful gluten free bakery tucked into Portland's Lloyd District. The space is filled with natural light and the moment the front door opened, we could feel the warmth and love inside. This love is not just in the freshly baked pastries, it's embedded in the bakery's origins. Greta's mom, Anne Miller, opened the bakery in 2011 after Greta's sister, Emma, was diagnosed with celiac disease. Determined to create treats her daughters could enjoy, Anne dived head first into perfecting gluten free recipes. The restaurant name itself is a nod to the original "Gems", her daughters Greta and Emma.
 
@@ -302,6 +332,8 @@ When asked for a song that reminded her of growing up, Greta giggled a little be
     songTitle: 'Thriller',
     artist: 'Michael Jackson',
     location: 'Los Amigos Burrito, Florence, Oregon',
+    latitude: 43.9826,
+    longitude: -124.0998,
     shortStory: '20-year-old Carlos has worked at his family\'s restaurant for five years. His song choice reminds him of watching the "zombie music video" with his uncle, who passed away a year ago.',
     fullStory: `We met 20-year-old Carlos at Los Amigos Burrito in Florence, Oregon, a family-owned restaurant that has been serving authentic Mexican food for over 20 years. From the moment we walking in, the atmosphere felt personal: colorful walls, flags and maps to show origin, and music give the sense that generations of hard work have passed through the kitchen. Carlos had been working there for about 5 years, helping his family continue to build its business.
 

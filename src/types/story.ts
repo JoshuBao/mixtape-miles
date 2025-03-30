@@ -12,6 +12,8 @@ export interface StoryData {
   image?: string;
   slug?: string;
   theme?: string;
+  latitude?: number;
+  longitude?: number;
 }
 
 export interface StoriesCollection {
