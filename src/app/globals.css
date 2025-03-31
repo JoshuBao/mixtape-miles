@@ -29,15 +29,29 @@ body {
   font-family: var(--font-sans, Arial, Helvetica, sans-serif);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* Custom components */
 .song-card {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .song-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Split layout utilities */
+.split-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .split-content {
+    flex-direction: row;
+  }
 }
 
 /* Enhanced gradient styles */
@@ -96,15 +110,13 @@ body {
   font-weight: 800;
 }
 
-/* Vinyl record specific styles */
+/* Vinyl record specific styles - enhanced for new design */
 .vinyl-record {
   position: absolute;
-  bottom: -80px;
-  right: -80px;
   width: 280px;
   height: 280px;
   z-index: 20;
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.3));
   animation: float 6s ease-in-out infinite;
   transform-origin: center center;
 }
@@ -114,8 +126,8 @@ body {
   height: 100%;
   border-radius: 50%;
   background: linear-gradient(135deg, #264653, #000000);
-  border: 8px solid rgba(255, 255, 255, 0.8);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 8px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   animation: spin 20s linear infinite;
   position: relative;
   overflow: hidden;
@@ -132,8 +144,8 @@ body {
     circle at center,
     rgba(255, 255, 255, 0),
     rgba(255, 255, 255, 0) 5px,
-    rgba(255, 255, 255, 0.1) 6px,
-    rgba(255, 255, 255, 0.1) 7px
+    rgba(255, 255, 255, 0.15) 6px,
+    rgba(255, 255, 255, 0.15) 7px
   );
   border-radius: 50%;
   z-index: 1;
@@ -152,7 +164,7 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  box-shadow: 0 0 15px rgba(231, 111, 81, 0.5);
+  box-shadow: 0 0 20px rgba(231, 111, 81, 0.7), inset 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .vinyl-hole {
@@ -160,7 +172,7 @@ body {
   height: 12px;
   border-radius: 50%;
   background: #000;
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 /* Animation keyframes */
@@ -249,6 +261,38 @@ body {
   }
 }
 
+/* Add a shine effect for cards and buttons */
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: rotate(30deg) translateX(-100%);
+  }
+  100% {
+    transform: rotate(30deg) translateX(100%);
+  }
+}
+
 .text-gradient-sunset {
   background-clip: text;
   -webkit-background-clip: text;
@@ -271,4 +315,35 @@ body {
 /* Overriding any potential dark theme styles */
 .map-container {
   background-color: #FFFFFF; /* mixtape-paper */
+}
+
+/* Enhanced content container for split layout */
+.content-container {
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.content-container:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Transition utilities */
+.transition-all-500 {
+  transition: all 0.5s ease;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }

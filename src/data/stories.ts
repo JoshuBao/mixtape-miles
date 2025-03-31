@@ -7,8 +7,8 @@ export const storiesData: StoryData[] = [
     songTitle: 'Going to California',
     artist: 'Led Zeppelin',
     location: 'The Daily Grind Espresso Bar, Northern California',
-    latitude: 37.7749,
-    longitude: -122.4194,
+    latitude: 40.2665136598071,
+    longitude: -123.8728734388461,
     shortStory: 'Originally from Illinois, Benjamin found himself watching the sunset dipping below the Lake Michigan horizon at 27 years old. Recently free from the grips of alcohol, he searched for a new horizon for himself.',
     fullStory: `We met Benjamin as he was taking a quick smoke and espresso break outside of The Daily Grind Espresso Bar. When asked our staple question about a song that reminded him of growing up, Ben answered quickly, a sense of nostalgia passing over him.
 
@@ -29,8 +29,8 @@ Now, settled with his son in Southern Humboldt County, "Going to California" mar
     songTitle: 'Night Moves / Respect',
     artist: 'Bob Seger / Aretha Franklin',
     location: 'Drury-Chaney Trail, Redwoods',
-    latitude: 41.2132,
-    longitude: -124.0046,
+    latitude: 40.44303236082393,
+    longitude: -123.98656095049299,
     shortStory: 'Mike and Ann from Houston, Texas are on a 4-month road trip through the west coast in their mobile home. Their last trip was 6 months long and went all the way to Alaska!',
     fullStory: `We met Mike and Ann during our hike on the Drury-Chaney Trail, as they were the first people we had run into in about a mile through the redwood canopy. 
 
@@ -51,8 +51,8 @@ Ann loves "Respect" by Aretha Franklin since she always heard it growing up. She
     songTitle: 'Stairway to Heaven',
     artist: 'Led Zeppelin',
     location: 'Antique Store, Old Town Eureka',
-    latitude: 40.8021,
-    longitude: -124.1637,
+    latitude: 40.80327162254342,
+    longitude: -124.16641146230468,
     shortStory: '71-year-old Gary reminisces about hearing "Stairway to Heaven" as a teenager on his friend Bob Yager\'s record player. He\'s been a fixture in Eureka his entire life.',
     fullStory: `We met 71 year old Gary when exploring the Old Town Eureka area, inside of an antique store, just off the main road. Cluttered with an entourage of antique treasures, we squeezed through the aisles to glance through the bins of pieces before running into Gary. 
 
@@ -71,8 +71,8 @@ Offering more of his story, Gary shared that he has been in Eureka his whole lif
     songTitle: 'White Room',
     artist: 'Cream',
     location: 'Local Store, Eureka',
-    latitude: 40.8021,
-    longitude: -124.1637,
+    latitude: 40.79419802096012,
+    longitude: -124.13626822334014,
     shortStory: 'Joe heard "White Room" by Cream constantly on the radio throughout his childhood, describing it as "a banger." As a drummer, he now appreciates the elaborate drumming sequences in the song.',
     fullStory: `We met Joe as we passed by another local store in the Eureka area. To our question about a song that reminded him of growing up, Joe gave a quick contemplation before settling on "White Room" by Cream. 
 
@@ -91,8 +91,8 @@ He hears and feels more of the elaborate drumming sequences in the songs, bringi
     songTitle: 'Verde River',
     artist: 'Kassi Valazza',
     location: 'Prairie Creek Redwoods State Park Visitor Center',
-    latitude: 41.2132,
-    longitude: -124.0046,
+    latitude: 41.36396729688710,
+    longitude: -124.02312421930522,
     shortStory: 'Originally from Prescott, Arizona, 39-year-old Lisa moved to the redwoods five years ago after serving in the military. She chose a song by a fellow Arizonan that reminds her of the landscapes that shaped her.',
     fullStory: `We met Lisa at the Prairie Creek Redwoods State Park Visitor Center while looking for a good trail to hike for the afternoon. Outside, the fields were dotted with elk, and the sound of nearby creeks echoed through the trees, an already magical stop before we even stepped onto the trail.
 
@@ -112,9 +112,9 @@ Originally from Prescott, Arizona, Lisa spent most of her life there before serv
     personName: 'James Haug',
     songTitle: 'Tea For the Tillerman',
     artist: 'Yusuf/Cat Stevens',
-    location: 'Redwoods, Humboldt County',
-    latitude: 40.745,
-    longitude: -123.8695,
+    location: 'Prairie Creek Redwoods State Park',
+    latitude: 41.40766624044459,
+    longitude: -124.03089587356824,
     shortStory: 'At 67, James has had three careers: environmental chemist, fine wine dealer, and now a planning forester for the Yurok Tribe. Originally from St. Louis, his journey took him across the country before settling in California.',
     fullStory: `We met James while hiking through the redwoods in Humboldt, all of us stopped at a creek trying to find a dry way across. When we asked what song reminded him of growing up, he answered after careful deliberation: "Tea for the Tillerman" by Yusuf / Cat Stevens.
 
@@ -132,9 +132,9 @@ James has had three careers: environmental chemist, fine wine dealer for 25 year
     personName: 'Chung Li',
     songTitle: 'Wind',
     artist: 'Akeboshi',
-    location: 'Redwoods, Humboldt County',
-    latitude: 40.745,
-    longitude: -123.8695,
+    location: 'Prairie Creek Redwoods State Park',
+    latitude: 41.40766624044459,
+    longitude: -124.03089587356824,
     shortStory: 'Originally from Chengdu, China, 29-year-old Chung is studying for his doctorate in classical piano at the University of Missouri–Kansas City. The Naruto theme song brings back memories of his childhood.',
     fullStory: `We ran into Chung Li as he was balancing on top of a thin log as he was, like us, trying to find a way around the flowing creek in the middle of our redwoods hike. He was with James, an old friend from their college days at Humboldt state, whose story you can find above. When asked for a song that reminded him of growing up, Chung quickly whispered, "anime" before pondering through several specifics to conclude on "Wind" by Akeboshi as it was the theme song for Naruto.
 
@@ -151,8 +151,8 @@ Originally from Chengdu, China, Chung is 29 and studying for his doctorate in mu
     songTitle: '505',
     artist: 'Arctic Monkeys',
     location: 'SeaQuake Brewing, Crescent City',
-    latitude: 41.7558,
-    longitude: -124.2017,
+    latitude: 41.74945821161687,
+    longitude: -124.19978642890707,
     shortStory: 'We met 18-year-old Angel during his first shift as a waiter at SeaQuake Brewing. He discovered "505" during quarantine in 8th grade, introduced to him by a girl named Presley who later rejected him.',
     fullStory: `We met 18-year-old Angel Marquez at SeaQuake Brewing in Crescent City, California, when we stopped in for a delicious dinner. It was his very first shift as a waiter, though the place already felt like home—his older sibling worked there before him, and his dad still bakes the bread for the menu.
 
@@ -170,9 +170,9 @@ Now a high school senior, Angel plans to attend community college and dreams of 
     personName: 'Sara, Alan, and Coco',
     songTitle: 'Three Little Birds / Sloop John B / Stayin\' Alive',
     artist: 'Bob Marley / The Beach Boys / Bee Gees',
-    location: 'Rocky Overlook, Oregon Coast',
-    latitude: 44.6368,
-    longitude: -124.0534,
+    location: 'Samuel H. Boardman State Scenic Corridor',
+    latitude: 42.15691936334,
+    longitude: -124.36137601667336,
     shortStory: 'We met this family during our coastal hike in Oregon. Each had their own song: Sara with Bob Marley\'s road trip anthem, Alan with the first song he learned on guitar, and 14-year-old Coco with the Bee Gees classic that soundtracked their family drives.',
     fullStory: `We met Sara, Alan, and their daughter Coco at a rocky overlook along the Oregon coast. We had just wrapped up a coastal hike and stopped to take in the view; they were seated nearby, finishing up lunch and admiring the same wide stretch of Pacific horizon. A shared pause in the day turned into a conversation about music, memory, and the songs that stay with us.
 
@@ -194,9 +194,9 @@ Three different songs from three different memories, but all part of the same vi
     personName: 'Linnea and Tracy',
     songTitle: 'Old Man / California',
     artist: 'Neil Young / Joni Mitchell',
-    location: 'Natural Bridges Viewpoint, Oregon Coast',
-    latitude: 42.2226,
-    longitude: -124.3615,
+    location: 'Natural Bridges, Oregon Coast',
+    latitude: 42.18991079328862,
+    longitude: -124.36600126766034,
     shortStory: 'Newly met potential neighbors Linnea and Tracy share songs from their pasts: Linnea\'s life of reinvention across California and Tracy\'s journey from Half Moon Bay to Hawaii, now possibly returning to Oregon.',
     fullStory: `We met Linnea and Tracy at the Natural Bridges Viewpoint on the Oregon Coast. They were standing side by side on the wooden platform overlooking the sea when we crossed paths, stopping to admire the beautiful view before heading out for a short hike. The conversation began with a compliment to Linnea's dog, Numi—a shy rescue mutt she had adopted, name and all, from the Humane Society.
 
@@ -216,9 +216,9 @@ Tracy picked "California" by Joni Mitchell. Raised in Half Moon Bay, she was imm
     personName: 'Kiki McGrath',
     songTitle: 'Yellow Brick Road',
     artist: 'Elton John',
-    location: 'Prehistoric Gardens Dinosaur Park, Southern Oregon Coast',
-    latitude: 42.2226,
-    longitude: -124.3615,
+    location: 'Prehistoric Gardens Dinosaur Park',
+    latitude: 42.61211614699009,
+    longitude: -124.39290322957247,
     shortStory: 'Kiki runs her grandparents\' roadside Dinosaur Park, a family legacy since the 1950s. She\'s lived on the Southern Oregon Coast her entire life and is now looking ahead to retirement and visiting her daughter in London.',
     fullStory: `We met Kiki at the Prehistoric Gardens Dinosaur Park, a roadside gem along the Southern Oregon Coast that caught our eye with its towering T-Rex statue. Curiosity pulled us off the highway and straight into Kiki's gift shop, where she welcomed us with a warm smile and a story that stretched back generations.
 
@@ -239,8 +239,8 @@ After decades of carrying on the family legacy, Kiki is now looking ahead to ret
     songTitle: 'Boondocks',
     artist: 'Little Big Town',
     location: 'Historic Wilson\'s Market, Bandon, Oregon',
-    latitude: 43.1181,
-    longitude: -124.4081,
+    latitude: 43.11992231626174,
+    longitude: -124.40273881301621,
     shortStory: '32-year-old Ethan has spent most of his life in Bandon, Oregon, working at Wilson\'s Market for the past five years. His chosen song, "Boondocks," perfectly captures his small-town pride and the simple memories of his middle school days.',
     fullStory: `We met Ethan at Historic Wilson's Market in Bandon, Oregon, a small-town staple that has been around since 1932. We had pulled off the road for a quick taco from the deli, and Ethan greeted us with a friendly energy that matched the warm, local vibe of the shop.
 
@@ -260,9 +260,9 @@ Ethan's story is one of familiarity, hard work, and finding joy in the everyday 
     personName: 'Ryan Van-Der-Linde',
     songTitle: 'Close to you',
     artist: 'The Carpenters',
-    location: 'Sand Master Park, Florence, Oregon',
-    latitude: 43.9826,
-    longitude: -124.0998,
+    location: 'Bay St Florence, Oregon',
+    latitude: 43.96636705015689,
+    longitude: -124.10769648233291,
     shortStory: '24-year-old Ryan works as a sandboarding instructor after five years in Fire/EMS. His chosen song brings back the few precious memories he has with his father from when he was very young.',
     fullStory: `We met Ryan at Sand Master Park in Florence, Oregon, where he was our sandboarding instructor for the afternoon. Easygoing and full of laughter, he felt like someone you could talk to for hours. As the sun dipped beneath the sand and our legs started to give out, we asked him our usual question before taking our last run.
 
@@ -291,9 +291,9 @@ Sometimes a song holds the gentlest part of someone's story. Sometimes the rest 
     personName: 'Bill',
     songTitle: 'Bridge over Troubled Water',
     artist: 'Simon & Garfunkel',
-    location: 'Florence, Oregon',
-    latitude: 43.9826,
-    longitude: -124.0998,
+    location: 'Sandmaster Park, Florence, Oregon',
+    latitude: 44.00995802134284,
+    longitude: -124.10210204489101,
     shortStory: '80-year-old Bill\'s life has taken him from the Peace Corps in Haiti and Bolivia to a career in masonry. His song choice connects to a poignant memory of a friend\'s death at high altitude in Bolivia.',
     fullStory: `We met 80-year-old Bill in the small-town center of Florence, Oregon, right on the edge of the flowing river water. He was selling a car, a red 1990 Buick Reatta V6, a car which he had purchased for his wife, who loved vintage Buicks and "he couldn't say no to her." We ended up talking with Bill for nearly an hour as he gave us valuable life perspective. He spoke slowly and intentionally, painting out details of each memory for us. Bill's life had taken him across trades, continents, and decades of hard work. After college, he served in the Peace Corps, living places such as Haiti and Bolivia. He also developed a clear passion and skillful knowledge for masonry, something he spoke about with pride, his stories full of craftmanship and care.  
 
@@ -310,30 +310,12 @@ For Bill, "Bridge Over Troubled Water" holds it all: youth, friendship, loss, fi
   },
   {
     id: '15',
-    personName: 'Greta Miller',
-    songTitle: 'Our House',
-    artist: 'Madness',
-    location: 'Gluten Free Gem, Portland',
-    latitude: 45.5051,
-    longitude: -122.675,
-    shortStory: 'Greta\'s family started their gluten-free bakery after her sister was diagnosed with celiac disease. Her childhood song reminds her of jumping on her parents\' beds with her sister - the same sister who inspired the bakery\'s founding.',
-    fullStory: `We met Greta at "Gluten Free Gem," a cheerful gluten free bakery tucked into Portland's Lloyd District. The space is filled with natural light and the moment the front door opened, we could feel the warmth and love inside. This love is not just in the freshly baked pastries, it's embedded in the bakery's origins. Greta's mom, Anne Miller, opened the bakery in 2011 after Greta's sister, Emma, was diagnosed with celiac disease. Determined to create treats her daughters could enjoy, Anne dived head first into perfecting gluten free recipes. The restaurant name itself is a nod to the original "Gems", her daughters Greta and Emma.
-
-When asked for a song that reminded her of growing up, Greta giggled a little before settling on "Our House" by Madness. She remembered first hearing it at as a vibrant 6-year-old as her and her sister jumped on their parents' beds, the upbeat tune echoing through the house. Born and raised in Portland, Greta practically grew up inside the bakery. Her bright spirit, shaped by a love-filled home and a mom who turned a diagnosis into a dream, is evident in everything from her smile to the frosting on the cinnamon roll (probably the best gluten free thing I've ever had). The song, "Our House," clearly embodies her family's sprit of kindness and love that the bakery is built upon. View their website here (GlutenFreeGem.com) to see more of their story, including pictures of young Greta and Emma baking with their mom!`,
-    journey: 'Berkeley-Oregon Road Trip',
-    journeyDate: 'March 26, 2025',
-    emoji: '🧁',
-    slug: 'greta-miller',
-    theme: 'What is a song that reminds you of growing up?'
-  },
-  {
-    id: '16',
     personName: 'Carlos Munoz',
     songTitle: 'Thriller',
     artist: 'Michael Jackson',
-    location: 'Los Amigos Burrito, Florence, Oregon',
-    latitude: 43.9826,
-    longitude: -124.0998,
+    location: 'Los Amigos Burritos, Florence, Oregon',
+    latitude: 43.97132158618836,
+    longitude: -124.10581845040683,
     shortStory: '20-year-old Carlos has worked at his family\'s restaurant for five years. His song choice reminds him of watching the "zombie music video" with his uncle, who passed away a year ago.',
     fullStory: `We met 20-year-old Carlos at Los Amigos Burrito in Florence, Oregon, a family-owned restaurant that has been serving authentic Mexican food for over 20 years. From the moment we walking in, the atmosphere felt personal: colorful walls, flags and maps to show origin, and music give the sense that generations of hard work have passed through the kitchen. Carlos had been working there for about 5 years, helping his family continue to build its business.
 
@@ -345,13 +327,31 @@ When asked for a song that reminded him of growing up, Carlos chose "Thriller" b
     theme: 'What is a song that reminds you of growing up?'
   },
   {
+    id: '16',
+    personName: 'Greta Miller',
+    songTitle: 'Our House',
+    artist: 'Madness',
+    location: 'Gluten Free Gem, Portland',
+    latitude: 45.5349758559528,
+    longitude: -122.6638782151570,
+    shortStory: 'Greta\'s family started their gluten-free bakery after her sister was diagnosed with celiac disease. Her childhood song reminds her of jumping on her parents\' beds with her sister - the same sister who inspired the bakery\'s founding.',
+    fullStory: `We met Greta at "Gluten Free Gem," a cheerful gluten free bakery tucked into Portland's Lloyd District. The space is filled with natural light and the moment the front door opened, we could feel the warmth and love inside. This love is not just in the freshly baked pastries, it's embedded in the bakery's origins. Greta's mom, Anne Miller, opened the bakery in 2011 after Greta's sister, Emma, was diagnosed with celiac disease. Determined to create treats her daughters could enjoy, Anne dived head first into perfecting gluten free recipes. The restaurant name itself is a nod to the original "Gems", her daughters Greta and Emma.
+
+When asked for a song that reminded her of growing up, Greta giggled a little before settling on "Our House" by Madness. She remembered first hearing it at as a vibrant 6-year-old as her and her sister jumped on their parents' beds, the upbeat tune echoing through the house. Born and raised in Portland, Greta practically grew up inside the bakery. Her bright spirit, shaped by a love-filled home and a mom who turned a diagnosis into a dream, is evident in everything from her smile to the frosting on the cinnamon roll (probably the best gluten free thing I've ever had). The song, "Our House," clearly embodies her family's sprit of kindness and love that the bakery is built upon. View their website here (GlutenFreeGem.com) to see more of their story, including pictures of young Greta and Emma baking with their mom!`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 26, 2025',
+    emoji: '🧁',
+    slug: 'greta-miller',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
     id: '17',
     personName: 'Arielle Tichy',
     songTitle: 'The Lawrence Welk Show Closing Credits',
     artist: 'Lawrence Welk',
-    location: 'Portland Japanese Garden',
-    latitude: 45.5191,
-    longitude: -122.7084,
+    location: 'Portland Japanese Gardens',
+    latitude: 45.5184912959515,
+    longitude: -122.7080465688362,
     shortStory: '55-year-old Arielle connects to her German heritage through "The Lawrence Welk Show Closing Credits," which reminds her of her refugee father. After years of feeling disconnected, she\'s finally found her home in Oregon\'s forests.',
     fullStory: `We met 55-year-old Arielle at the Portland Japanese Garden during a public tour, surrounded by the blooming cherry blossoms and soft sound of waterfalls. She had such an open and curious energy, asking us many questions about our goals, travels, and even offering to connect us with her son for a test flight on our next trip (stay tuned to hear more about that!) 
 
@@ -373,9 +373,9 @@ Arielle is letting life unfold. She is drawn to things that bring joy and meanin
     personName: 'A.D. (Adrian Woodard)',
     songTitle: 'Always Be My Baby',
     artist: 'Mariah Carey',
-    location: 'Eem Thai Restaurant, Portland',
-    latitude: 45.5425,
-    longitude: -122.6746,
+    location: 'EEM Thai Food in Oregon',
+    latitude: 45.55065507108121,
+    longitude: -122.66654534290585,
     shortStory: '32-year-old A.D. has built his life around Portland\'s hospitality scene, but after his first real vacation to Chicago, he\'s ready for a change. His childhood song, first played by his aunt Elizabeth, connects him to his roots.',
     fullStory: `We met 32-year-old A.D. on a vibrant afternoon in Portland at Eem, a Thai restaurant buzzing with music, chatter, and the warm hum of energy. He was behind the bar, completely in his element, moving around to create unique drinks with the kind of grace that only comes from someone who loves what they do. After our meal (which did not disappoint), we struck up a conversation that quickly turned into a story.
 
@@ -400,9 +400,9 @@ Back at the bar, the ice is rattling, the music is playing, and A.D. is already 
     personName: 'Tatum Keller',
     songTitle: 'Apologize',
     artist: 'One Republic',
-    location: 'Kaan Restaurant, Portland',
-    latitude: 45.5231,
-    longitude: -122.6765,
+    location: 'Kaan, Portland',
+    latitude: 45.52129037883117,
+    longitude: -122.6598974785739,
     shortStory: '23-year-old Tatum moved from San Diego to Portland seeking change. She thrives in the fast-paced restaurant world and connects deeply with people, guided by her mottos: "Go in with intention, not expectation" and "Find joy in the mundane."',
     fullStory: `We met 23-year-old Tatum at Kaan, a fine dining experience in Portland created by Chef Gregory Gourdet. Tatum played a huge part in crafting our night—memorizing Emily's long list of allergies, recommending unforgettable dishes, and making us feel fully cared for throughout the entire meal.
 
@@ -428,9 +428,9 @@ And somehow, her words hit just as hard as the meal itself.`,
     personName: 'Nina Ella-Layla Shaktama',
     songTitle: 'Yesterday Once More',
     artist: 'The Carpenters',
-    location: 'Phaya Thai Restaurant, Portland',
-    latitude: 45.5127,
-    longitude: -122.6550,
+    location: 'Phaya, Portland',
+    latitude: 45.51191627327078,
+    longitude: -122.61758275397771,
     shortStory: '33-year-old Nina, originally from Southern Thailand, first heard her song in an English class. Now she and her sister run a gluten-free Thai restaurant in Portland, recreating the comfort food of their childhood while accommodating dietary restrictions.',
     fullStory: `We met 33-year-old Nina at Phaya, a bright and stylish gluten-free Thai restaurant in Portland that she runs with her sister. The space had a calm, welcoming vibe: open layout, soft LED lights, and a kind of energy that makes you want to stay a little longer. Nina greeted us with a warm smile and friendly openness. "I'm not very good at English," she gently admitted, "but I will try." And try she did, offering a story full of care and memory.
 
@@ -450,9 +450,9 @@ Nina has built something new in a city far from where she started. Her restauran
     personName: 'Zach McKinley',
     songTitle: 'This is the Day',
     artist: 'The The',
-    location: 'Brain Dead Store, Portland',
-    latitude: 45.5231,
-    longitude: -122.6410,
+    location: 'Brain Dead Portland',
+    latitude: 45.52269008671654,
+    longitude: -122.68171264249767,
     shortStory: '33-year-old Zach turned his high school screen-printing hobby into a decade-long career in retail and fashion. His love for "This is the Day" began during a casual day in Newport Beach and remains his perfect summer soundtrack.',
     fullStory: `On our final day in Portland, we took a break from chasing waterfalls and tourist attractions to simply wander through the city. That's when we met 33-year-old Zach at Brain Dead, a storefront that exudes effortless style. Inside, it felt like art had come alive in clothing form, with unique pieces on every hanger. Zach had an easygoing, friendly energy that made us want to learn more. Before we could even ask, he was already sharing his favorite stops along the Columbia River Gorge and giving tips for the drive back.
 
@@ -472,9 +472,9 @@ These days, only a few weeks into working at Brain Dead, he thinks it already fe
     personName: 'Deja Indigo Yerger',
     songTitle: 'Rocket',
     artist: 'The Smashing Pumpkins',
-    location: 'Mutantis Brewery, Portland',
-    latitude: 45.5390,
-    longitude: -122.6510,
+    location: 'Mutantis Cult Brewery, Portland',
+    latitude: 45.57158842322676,
+    longitude: -122.64679021361228,
     shortStory: '42-year-old Deja founded Mutantis, a queer and trans-owned gluten-free vegan brewery, as a space for people to be themselves. Though the brewery is closing, she\'s transitioning to a new career as an electrologist to continue providing inclusive, affirming care.',
     fullStory: `We only stepped into Mutantis Brewery looking for a bathroom while waiting for food, but what we found was something far more unexpected: a space pulsing with personality. The second we walked in, we knew we found something special. Neon tape lined the walls, handmade signs hung like battle flags, and a quiet stillness in the air that only exists when something is nearing its end. The bar was closing.
 
@@ -498,9 +498,9 @@ Before we left, we asked if she had any final words to share. "Get off Facebook.
     personName: 'Lilith Hope',
     songTitle: 'The Ballad of Davy Crockett',
     artist: 'Bill Hayes',
-    location: 'Neighborhood Bar, Portland',
-    latitude: 45.5370,
-    longitude: -122.6500,
+    location: 'Mutantis Cult Brewery, Portland',
+    latitude: 45.57158842322676,
+    longitude: -122.64679021361228,
     shortStory: '54-year-old Lilith has lived in 33 different places, following her codebreaker father\'s IBM career. Her song connects her to Appalachian family roots, while her global experiences have shaped her spiritual views and definition of family.',
     fullStory: `We met Lilith Hope on a rainy Portland afternoon at a neighborhood bar nearing its final summer. She was there to see an old friend, the bar's proprietor, and share recent studies she'd completed—part of a larger personal journey through faith, ancestry, and global history. Though she works as a federal employee, Lilith spoke more like a philosopher, a truth-seeker, a storyteller.
 
@@ -525,8 +525,8 @@ And somewhere in her memory, her mother still hums "Davy Crockett"—a song of m
     songTitle: 'Landslide',
     artist: 'Fleetwood Mac',
     location: 'Multnomah Falls, Oregon',
-    latitude: 45.5762,
-    longitude: -122.1158,
+    latitude: 45.57777492308332,
+    longitude: -122.11730077032142,
     shortStory: '20-year-old Oliver works as a parking attendant at Multnomah Falls after returning to Portland from San Francisco. Their song, which they\'ve known since childhood, resonates differently now as they navigate life changes and find stability with their partners.',
     fullStory: `We met 20 year-old Oliver just outside the iconic viewpoint at Multnomah Falls, with the mist still clinging to the mountainside and the air filled with the kind of quiet that only precedes rain. The roar of the waterfall echoed softly behind us, and a train was slowly approaching, making its way through the gorge. Oliver stood at the edge of the parking lot, wrapped in a bright orange safety vest and filled the air with an openness that drew us in to learning more of their story.
 

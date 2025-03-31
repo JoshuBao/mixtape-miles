@@ -15,13 +15,13 @@ const NavLink = ({ href, active, children }: NavLinkProps) => {
       href={href} 
       className={`relative group px-3 py-2 ${
         active 
-          ? 'text-white font-medium' 
-          : 'text-mixtape-paper hover:text-mixtape-tertiary'
+          ? 'text-mixtape-dark font-semibold' 
+          : 'text-mixtape-dark/90 hover:text-mixtape-dark'
       } transition-colors duration-200`}
     >
       {children}
       <span 
-        className={`absolute bottom-0 left-0 w-full h-0.5 bg-mixtape-tertiary transform transition-transform duration-300 ${
+        className={`absolute bottom-0 left-0 w-full h-0.5 bg-mixtape-dark transform transition-transform duration-300 ${
           active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
         }`}
       ></span>
@@ -34,28 +34,28 @@ const Header = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="bg-gradient-to-r from-mixtape-primary via-mixtape-primary/80 to-mixtape-secondary p-6 shadow-md">
+    <header className="bg-gradient-to-r from-mixtape-primary to-mixtape-secondary p-4 lg:p-6 shadow-lg z-50 sticky top-0">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         <Link 
           href="/" 
-          className="flex items-center space-x-2 mb-4 sm:mb-0 group"
+          className="flex items-center space-x-3 mb-4 sm:mb-0 group"
         >
-          <div className="relative w-12 h-12 overflow-hidden rounded-full bg-white/10 p-1 shadow-lg">
+          <div className="relative w-12 h-12 overflow-hidden rounded-full bg-mixtape-dark/30 p-1 shadow-lg transition-transform duration-300 group-hover:scale-105">
             <Image 
               src="/MixtapeMiles.png" 
               alt="Mixtape Miles Logo" 
               width={48} 
               height={48} 
-              className="object-contain transform transition-transform duration-300 group-hover:scale-110"
+              className="object-contain transition-all duration-300 group-hover:brightness-110"
             />
           </div>
-          <span className="text-2xl font-bold text-mixtape-paper hover:text-white transition-colors duration-300">
+          <span className="text-2xl font-bold text-mixtape-dark transition-all duration-300 group-hover:tracking-wide">
             Mixtape Miles
           </span>
         </Link>
         
-        <nav>
-          <ul className="flex space-x-2 sm:space-x-6">
+        <nav className="bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-md border border-mixtape-primary/20">
+          <ul className="flex space-x-1 sm:space-x-6">
             <li>
               <NavLink href="/" active={isActive('/')}>
                 Home
@@ -68,7 +68,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink href="/trips" active={isActive('/trips')}>
-                All Trips
+                Trips
               </NavLink>
             </li>
             <li>
@@ -76,12 +76,6 @@ const Header = () => {
                 Stories
               </NavLink>
             </li>
-            {/* Hidden until the contact page is ready */}
-            {/* <li>
-              <NavLink href="/contact" active={isActive('/contact')}>
-                Contact
-              </NavLink>
-            </li> */}
           </ul>
         </nav>
       </div>
