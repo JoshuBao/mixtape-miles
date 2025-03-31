@@ -34,13 +34,13 @@ const Header = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="bg-gradient-to-r from-mixtape-primary to-mixtape-secondary p-4 lg:p-6 shadow-lg z-50 sticky top-0">
+    <header className="bg-white p-4 lg:p-6 shadow-lg z-50 sticky top-0 border-b border-gray-100">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         <Link 
           href="/" 
           className="flex items-center space-x-3 mb-4 sm:mb-0 group"
         >
-          <div className="relative w-12 h-12 overflow-hidden rounded-full bg-mixtape-dark/30 p-1 shadow-lg transition-transform duration-300 group-hover:scale-105">
+          <div className="relative w-12 h-12 overflow-hidden rounded-full bg-mixtape-primary/10 p-1 shadow-lg transition-transform duration-300 group-hover:scale-105">
             <Image 
               src="/MixtapeMiles.png" 
               alt="Mixtape Miles Logo" 
@@ -54,7 +54,7 @@ const Header = () => {
           </span>
         </Link>
         
-        <nav className="bg-white/80 backdrop-blur-sm rounded-full px-4 py-2 shadow-md border border-mixtape-primary/20">
+        <nav className="bg-mixtape-primary/10 backdrop-blur-sm rounded-full px-4 py-2 shadow-md border border-mixtape-primary/20">
           <ul className="flex space-x-1 sm:space-x-6">
             <li>
               <NavLink href="/" active={isActive('/')}>
