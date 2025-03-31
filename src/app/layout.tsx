@@ -18,10 +18,9 @@ export const metadata: Metadata = {
   description: "Collecting songs and stories from strangers during travel adventures around the world",
   icons: {
     icon: [
-      { url: '/favicon.ico' },
       { url: '/MixtapeMiles.png', type: 'image/png' }
     ],
-    apple: { url: '/apple-icon.png', type: 'image/png' },
+    apple: { url: '/MixtapeMiles.png', type: 'image/png' },
   },
 };
 
