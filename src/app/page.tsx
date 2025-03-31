@@ -57,7 +57,7 @@ export default function Home() {
         
         <div className="relative z-30 text-center p-6 max-w-5xl mx-auto bg-mixtape-paper/30 backdrop-blur-md rounded-xl shadow-xl border border-white/30">
           <h1 className="text-6xl sm:text-7xl font-extrabold mb-6 tracking-tight">
-            <span className="text-gradient-primary drop-shadow-lg transform hover:scale-105 transition-transform duration-300 block">Songs That Shaped Us</span>
+            <span className="text-mixtape-text drop-shadow-lg transform hover:scale-105 transition-transform duration-300 block">Songs That Shaped Us</span>
           </h1>
           <p className="text-2xl sm:text-3xl mb-10 max-w-3xl mx-auto font-light leading-relaxed text-white drop-shadow-lg">
             Collecting the soundtrack of our journeys by asking travelers and locals about the music that defines their lives.
@@ -78,13 +78,11 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Vinyl Record Animation with enhanced visibility */}
-        <div className="absolute -bottom-20 -right-20 w-80 h-80 z-20">
-          <div className="w-full h-full rounded-full bg-gradient-primary border-8 border-mixtape-paper/70 shadow-2xl animate-spin-slow">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-20 h-20 rounded-full bg-mixtape-paper/80 flex items-center justify-center">
-                <div className="w-8 h-8 rounded-full bg-mixtape-secondary/80"></div>
-              </div>
+        {/* Vinyl Record Animation with improved styling */}
+        <div className="vinyl-record">
+          <div className="vinyl-disc">
+            <div className="vinyl-center">
+              <div className="vinyl-hole"></div>
             </div>
           </div>
         </div>
@@ -98,7 +96,7 @@ export default function Home() {
               <div className="w-16 h-2 bg-gradient-primary mx-auto rounded-full"></div>
             </div>
             <h2 className="text-4xl font-bold mb-4 text-mixtape-text">
-              <span className="text-gradient-primary inline">Interactive Mixtape Map</span>
+              <span className="text-gradient-vibrant inline">Interactive Mixtape Map</span>
             </h2>
             <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
               Explore our journey through music and stories. Each pin represents a location where we met someone 
@@ -180,7 +178,7 @@ export default function Home() {
               </div>
             </div>
             <h2 className="text-4xl font-bold mb-4 text-mixtape-text">
-              <span className="text-gradient-primary inline">Our Musical Journeys</span>
+              <span className="text-gradient-vibrant inline">Our Musical Journeys</span>
             </h2>
             <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
               Follow our adventures as we collect songs and stories from travelers and locals around the world.
@@ -309,7 +307,7 @@ export default function Home() {
               </div>
             </div>
             <h2 className="text-4xl font-bold mb-4 text-mixtape-text">
-              <span className="text-gradient-primary inline">Recent Song Stories</span>
+              <span className="text-gradient-vibrant inline">Recent Song Stories</span>
             </h2>
             <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
               Discover the latest stories and songs we&apos;ve collected on our journey, each representing a unique person and their musical memories.
