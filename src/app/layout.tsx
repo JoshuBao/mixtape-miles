@@ -15,6 +15,13 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Mixtape Miles",
   description: "Collecting songs and stories from strangers during travel adventures around the world",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/MixtapeMiles.png', type: 'image/png' }
+    ],
+    apple: { url: '/apple-icon.png', type: 'image/png' },
+  },
 };
 
 export default function RootLayout({
@@ -24,6 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/MixtapeMiles.png" />
+        <link rel="apple-touch-icon" href="/MixtapeMiles.png" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
