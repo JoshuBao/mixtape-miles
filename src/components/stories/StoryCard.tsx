@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { StoryData } from '@/types/story';
+import StoryImage from './StoryImage';
+import { hasStoryImage } from '@/data/imageMapping';
 
 type StoryCardProps = {
   story: StoryData;
@@ -16,22 +18,41 @@ export default function StoryCard({ story, featured = false }: StoryCardProps) {
     return 'from-mixtape-primary to-mixtape-primary/80';
   };
 
+  const hasImage = hasStoryImage(story);
+
   return (
     <div className={`bg-mixtape-paper rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 ${featured ? 'md:col-span-2' : ''}`}>
       <div className="h-48 relative">
-        <div className={`absolute inset-0 flex items-center justify-center bg-gradient-to-r ${getBgColor(story.journey)}`}>
-          <span className="text-mixtape-paper text-5xl">{story.emoji || '🎵'}</span>
-        </div>
-        {story.image && (
-          <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: `url('${story.image}')` }} />
+        {hasImage ? (
+          <StoryImage 
+            story={story} 
+            width={400} 
+            height={192} 
+            className="w-full h-full"
+            objectFit="cover"
+          />
+        ) : (
+          <div className={`absolute inset-0 flex items-center justify-center bg-gradient-to-r ${getBgColor(story.journey)}`}>
+            <span className="text-mixtape-paper text-5xl">{story.emoji || '🎵'}</span>
+          </div>
         )}
+        
+        {/* Overlay with journey and location info */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-3">
+          <div className="flex justify-between items-center">
+            <div className="bg-white/20 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full font-medium">
+              {story.location.split(',')[0]}
+            </div>
+            <div className="text-xs text-white">{story.journey}</div>
+          </div>
+        </div>
       </div>
+      
       <div className="p-6">
         <div className="flex justify-between items-start mb-3">
           <div className="bg-mixtape-primary/10 text-mixtape-primary text-sm px-3 py-1 rounded-full font-medium">
-            {story.location.split(',')[0]}
+            {story.journeyDate}
           </div>
-          <div className="text-xs text-mixtape-subtitle">{story.journeyDate}</div>
         </div>
         
         <h3 className="text-xl font-bold mb-2 text-mixtape-text">

@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getStoryBySlug, storiesData } from '@/data/stories';
+import StoryImage from '@/components/stories/StoryImage';
+import { getStoryImageCount } from '@/data/imageMapping';
 import type { Metadata } from 'next';
 
 type StoryPageProps = {
@@ -42,6 +44,9 @@ export default async function StoryPage(props: StoryPageProps) {
     notFound();
   }
 
+  // Get number of images for the story
+  const imageCount = getStoryImageCount(story);
+
   // Function to determine background gradient based on journey
   const getJourneyGradient = (journey: string) => {
     switch (journey) {
@@ -76,12 +81,31 @@ export default async function StoryPage(props: StoryPageProps) {
           </Link>
 
           <div className="bg-mixtape-paper rounded-xl shadow-lg overflow-hidden border border-mixtape-primary-100">
-            <div className={`h-64 ${getJourneyGradient(story.journey)} relative flex items-center justify-center`}>
-              <span className="text-white text-7xl drop-shadow-lg">{story.emoji || '🎵'}</span>
-              <div className="absolute top-4 right-4 bg-mixtape-paper/90 backdrop-blur-sm text-mixtape-primary px-3 py-1 rounded-full text-sm font-medium shadow-md border border-mixtape-primary-200">
-                {story.journey}
+            {/* Story header with image */}
+            {imageCount > 0 ? (
+              <div className="h-64 relative">
+                <StoryImage 
+                  story={story}
+                  width={1200}
+                  height={400}
+                  className="w-full h-full"
+                  priority={true}
+                />
+                <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                  <span className="text-white text-7xl drop-shadow-lg">{story.emoji || '🎵'}</span>
+                </div>
+                <div className="absolute top-4 right-4 bg-mixtape-paper/90 backdrop-blur-sm text-mixtape-primary px-3 py-1 rounded-full text-sm font-medium shadow-md border border-mixtape-primary-200">
+                  {story.journey}
+                </div>
               </div>
-            </div>
+            ) : (
+              <div className={`h-64 ${getJourneyGradient(story.journey)} relative flex items-center justify-center`}>
+                <span className="text-white text-7xl drop-shadow-lg">{story.emoji || '🎵'}</span>
+                <div className="absolute top-4 right-4 bg-mixtape-paper/90 backdrop-blur-sm text-mixtape-primary px-3 py-1 rounded-full text-sm font-medium shadow-md border border-mixtape-primary-200">
+                  {story.journey}
+                </div>
+              </div>
+            )}
             
             <div className="p-8">
               <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-8">
@@ -106,6 +130,26 @@ export default async function StoryPage(props: StoryPageProps) {
                   {story.location}
                 </div>
               </div>
+              
+              {/* Show additional images if available */}
+              {imageCount > 1 && (
+                <div className="mb-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {Array.from({ length: imageCount }).map((_, idx) => {
+                    if (idx === 0) return null; // Skip first image as it's already shown as header
+                    return (
+                      <div key={idx} className="rounded-lg overflow-hidden shadow-md">
+                        <StoryImage 
+                          story={story}
+                          index={idx}
+                          width={500} 
+                          height={300}
+                          className="w-full h-full"
+                        />
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
               
               <div className="prose prose-lg max-w-none">
                 {story.fullStory?.split('\n\n').map((paragraph, idx) => (

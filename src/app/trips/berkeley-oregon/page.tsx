@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StoryCard from '@/components/stories/StoryCard';
 import { getStoriesByJourney } from '@/data/stories';
+import Image from 'next/image';
 
 export const metadata = {
   title: 'Berkeley-Oregon Road Trip | Mixtape Miles',
@@ -11,8 +12,13 @@ export const metadata = {
 };
 
 export default async function BerkeleyOregonPage() {
-  // We're not using params or searchParams in this page
-  const berekeleyOregonStories = getStoriesByJourney('Berkeley-Oregon Road Trip');
+  // Get all Berkeley-Oregon stories
+  const berkeleyOregonStories = getStoriesByJourney('Berkeley-Oregon Road Trip');
+  
+  // Sort stories by date (newest first)
+  const recentStories = [...berkeleyOregonStories].sort((a, b) => 
+    new Date(b.journeyDate).getTime() - new Date(a.journeyDate).getTime()
+  );
   
   return (
     <div className="min-h-screen bg-mixtape-paper">
@@ -31,7 +37,7 @@ export default async function BerkeleyOregonPage() {
             Back to All Journeys
           </Link>
           
-          <div className="bg-gradient-primary rounded-xl p-8 mb-12 text-white shadow-lg">
+          <div className="bg-gradient-primary rounded-xl p-8 mb-12 text-white shadow-lg relative">
             <div className="absolute top-0 right-0 bg-gradient-secondary-to-tertiary text-mixtape-paper px-3 py-1 rounded-bl-lg text-sm font-bold m-4">
               ACTIVE
             </div>
@@ -45,7 +51,7 @@ export default async function BerkeleyOregonPage() {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-mixtape-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                 </svg>
-                {berekeleyOregonStories.length} Stories Collected
+                {berkeleyOregonStories.length} Stories Collected
               </div>
             </div>
           </div>
@@ -67,21 +73,40 @@ export default async function BerkeleyOregonPage() {
               but the personal connections and memories behind each song.
             </p>
           </div>
+
+          {/* Recent Stories Section */}
+          <div className="mb-16">
+            <div className="text-center mb-8">
+              <div className="w-16 h-2 bg-gradient-primary mx-auto rounded-full mb-4"></div>
+              <h2 className="text-3xl font-bold mb-4 text-mixtape-text">
+                <span className="text-gradient-vibrant inline">Recent Stories</span>
+              </h2>
+              <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
+                Our most recent encounters on this musical journey
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+              {recentStories.slice(0, 4).map(story => (
+                <StoryCard key={story.id} story={story} />
+              ))}
+            </div>
+          </div>
           
           <div className="text-center mb-12">
             <div className="mb-4">
               <div className="w-16 h-2 bg-gradient-primary mx-auto rounded-full"></div>
             </div>
             <h2 className="text-3xl font-bold mb-6 text-mixtape-text">
-              <span className="text-gradient-vibrant inline">Journey Stories</span>
+              <span className="text-gradient-vibrant inline">All Journey Stories</span>
             </h2>
             <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
-              Explore the personal stories and songs we&apos;ve collected along this beautiful coastal journey.
+              Explore all the personal stories and songs we&apos;ve collected along this beautiful coastal journey.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {berekeleyOregonStories.map(story => (
+            {berkeleyOregonStories.map(story => (
               <StoryCard key={story.id} story={story} />
             ))}
           </div>
