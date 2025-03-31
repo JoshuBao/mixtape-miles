@@ -19,58 +19,60 @@ export default function Home() {
       <Header />
 
       {/* Hero Section with Dynamic Background */}
-      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/nature.gif" 
+            src="/MixtapeMiles.png" 
             alt="Road trip background" 
             fill 
-            className="object-cover opacity-70"
+            className="object-contain sm:object-cover opacity-85"
+            sizes="100vw"
+            quality={90}
             priority
           />
         </div>
 
-        {/* Enhanced gradient overlay - using stronger opacity values */}
-        <div className="absolute inset-0 bg-black/20 z-5"></div>
-        <div className="absolute inset-0 bg-gradient-to-r from-mixtape-primary-300 via-transparent to-mixtape-secondary-300 z-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-mixtape-primary-200 via-transparent to-mixtape-secondary-200 z-10"></div>
+        {/* Enhanced gradient overlay - using more vibrant colors and better opacity values */}
+        <div className="absolute inset-0 bg-black/10 z-5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-mixtape-primary/20 via-transparent to-mixtape-secondary/20 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-mixtape-primary/10 via-transparent to-mixtape-secondary/10 z-10"></div>
         
         {/* Animated Musical Notes with enhanced visibility */}
         <div className="absolute inset-0 z-20 pointer-events-none">
           <div className="absolute top-1/4 left-1/5 animate-float-slow text-4xl drop-shadow-lg">
-            <span className="bg-mixtape-primary-500 text-white p-2 rounded-full">🎵</span>
+            <span className="bg-mixtape-primary text-white p-2 rounded-full shadow-lg">🎵</span>
           </div>
           <div className="absolute top-1/3 right-1/4 animate-float-medium text-3xl drop-shadow-lg">
-            <span className="bg-mixtape-secondary-500 text-white p-2 rounded-full">🎧</span>
+            <span className="bg-mixtape-secondary text-white p-2 rounded-full shadow-lg">🎧</span>
           </div>
           <div className="absolute bottom-1/3 left-1/3 animate-float-fast text-5xl drop-shadow-lg">
-            <span className="bg-mixtape-tertiary-500 text-white p-2 rounded-full">🎸</span>
+            <span className="bg-mixtape-tertiary text-white p-2 rounded-full shadow-lg">🎸</span>
           </div>
           <div className="absolute top-2/3 right-1/3 animate-float-slow text-4xl drop-shadow-lg">
-            <span className="bg-mixtape-primary-500 text-white p-2 rounded-full">🎼</span>
+            <span className="bg-mixtape-primary text-white p-2 rounded-full shadow-lg">🎼</span>
           </div>
           <div className="absolute bottom-1/4 right-1/5 animate-float-medium text-3xl drop-shadow-lg">
-            <span className="bg-mixtape-secondary-500 text-white p-2 rounded-full">🎹</span>
+            <span className="bg-mixtape-secondary text-white p-2 rounded-full shadow-lg">🎹</span>
           </div>
         </div>
         
-        <div className="relative z-30 text-center p-6 max-w-5xl mx-auto bg-mixtape-paper/30 backdrop-blur-md rounded-xl shadow-xl border border-white/30">
-          <h1 className="text-6xl sm:text-7xl font-extrabold mb-6 tracking-tight">
-            <span className="text-mixtape-text drop-shadow-lg transform hover:scale-105 transition-transform duration-300 block">Songs That Shaped Us</span>
+        <div className="relative z-30 text-center p-8 max-w-5xl mx-auto bg-mixtape-paper/40 backdrop-blur-lg rounded-xl shadow-2xl border border-white/30 transform transition-all duration-500 hover:bg-mixtape-paper/50">
+          <h1 className="text-6xl sm:text-7xl font-extrabold mb-8 tracking-tight">
+            <span className="text-mixtape-text drop-shadow-xl transform hover:scale-105 transition-transform duration-300 block bg-gradient-to-r from-mixtape-primary to-mixtape-secondary bg-clip-text text-transparent">Songs That Shaped Us</span>
           </h1>
-          <p className="text-2xl sm:text-3xl mb-10 max-w-3xl mx-auto font-light leading-relaxed text-white drop-shadow-lg">
+          <p className="text-2xl sm:text-3xl mb-10 max-w-3xl mx-auto font-medium leading-relaxed text-mixtape-text drop-shadow-lg">
             Collecting the soundtrack of our journeys by asking travelers and locals about the music that defines their lives.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Link 
               href="/stories" 
-              className="bg-gradient-primary text-white font-bold py-4 px-8 rounded-full hover:opacity-90 transition duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-gradient-to-r from-mixtape-primary to-mixtape-secondary text-white font-bold py-4 px-8 rounded-full hover:opacity-90 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Explore the Playlists
             </Link>
             <Link 
               href="/trips" 
-              className="bg-mixtape-paper border-2 border-mixtape-primary text-mixtape-primary font-bold py-4 px-8 rounded-full hover:bg-mixtape-paper transition duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-mixtape-paper/70 backdrop-blur-sm border-2 border-mixtape-primary text-mixtape-primary font-bold py-4 px-8 rounded-full hover:bg-mixtape-paper/90 transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               View Our Journeys
             </Link>
@@ -78,8 +80,8 @@ export default function Home() {
         </div>
         
         {/* Vinyl Record Animation with improved styling */}
-        <div className="vinyl-record">
-          <div className="vinyl-disc">
+        <div className="vinyl-record hidden sm:block">
+          <div className="vinyl-disc shadow-2xl">
             <div className="vinyl-center">
               <div className="vinyl-hole"></div>
             </div>

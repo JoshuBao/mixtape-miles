@@ -343,6 +343,207 @@ When asked for a song that reminded him of growing up, Carlos chose "Thriller" b
     emoji: '🌮',
     slug: 'carlos-munoz',
     theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '17',
+    personName: 'Arielle Tichy',
+    songTitle: 'The Lawrence Welk Show Closing Credits',
+    artist: 'Lawrence Welk',
+    location: 'Portland Japanese Garden',
+    latitude: 45.5191,
+    longitude: -122.7084,
+    shortStory: '55-year-old Arielle connects to her German heritage through "The Lawrence Welk Show Closing Credits," which reminds her of her refugee father. After years of feeling disconnected, she\'s finally found her home in Oregon\'s forests.',
+    fullStory: `We met 55-year-old Arielle at the Portland Japanese Garden during a public tour, surrounded by the blooming cherry blossoms and soft sound of waterfalls. She had such an open and curious energy, asking us many questions about our goals, travels, and even offering to connect us with her son for a test flight on our next trip (stay tuned to hear more about that!) 
+
+When asked our usual question about a song that reminds her of growing up. She answered without hesitation, "The Lawrence Welk Show Closing Credits." The song brings back a sense of nostalgia, not just because of the music, but because Lawrence Welk speaks with a distinct German accent, reminding Arielle of her father. The daughter of refugees from Kussel, Germany, she said it made her feel connected back to her heritage and seen. "It always connected me back to the Motherland," she shared. It gave her a rare sense of feeling more connected to what she saw on American television. 
+
+Arielle spent her early years in a bilingual town of Michigan, surrounded by a tight-knit German-speaking community. But when her father's job brought their family to Indiana, the shift was stark. She described it as being from a German pseudo-world into a place where she looked like everyone, but never felt like she truly belonged. That feeling of disconnection stayed with her much of her life, always in a quiet search for a place that felt like home. 
+
+She went on to raise two sons in Cincinnati, where her husband's job brought them. Originally a hospice nurse, Arielle stepped away from that career after finding the work environment disheartening. In the last six months, she's taken time to explore Oregon: soaking in its forests, finding a new personality for each piece of the coastline, and enjoying a quiet, nature-filled lifestyle. She says she has finally found home in the trees of the Pacific Northwest. The Oregon coast reminds Arielle of her Michigan roots as she talks to the ocean, the wind, the birds, and dives headfirst into the spirit of nature. 
+
+Arielle is letting life unfold. She is drawn to things that bring joy and meaning: volunteering with horse therapy, immigration advocacy, working with housing commission, maybe even venture capital. She's letting the universe guide her, one step at a time. And as for that old closing song on TV? For Arielle, it's still playing: a bridge between where she came from and where she has finally arrived.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 26, 2025',
+    emoji: '🌸',
+    slug: 'arielle-tichy',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '18',
+    personName: 'A.D. (Adrian Woodard)',
+    songTitle: 'Always Be My Baby',
+    artist: 'Mariah Carey',
+    location: 'Eem Thai Restaurant, Portland',
+    latitude: 45.5425,
+    longitude: -122.6746,
+    shortStory: '32-year-old A.D. has built his life around Portland\'s hospitality scene, but after his first real vacation to Chicago, he\'s ready for a change. His childhood song, first played by his aunt Elizabeth, connects him to his roots.',
+    fullStory: `We met 32-year-old A.D. on a vibrant afternoon in Portland at Eem, a Thai restaurant buzzing with music, chatter, and the warm hum of energy. He was behind the bar, completely in his element, moving around to create unique drinks with the kind of grace that only comes from someone who loves what they do. After our meal (which did not disappoint), we struck up a conversation that quickly turned into a story.
+
+A.D., short for Adrian, was born and right there in Portland. He's built a life rooted in the city by friends and family, but his eyes are starting to wander. When asked what song reminded him of growing up, he paused only briefly before landing on "Always Be My Baby by Mariah Carey. His aunt Elizabeth used to play it on repeat, and A.D. around 6 at the time, soaked it in. Mariah's spirit and vocals lured him in and it has been a grounding force for him ever since. "I kinda grew up with her," he told us, explaining how The Emancipation of Mimi later deepened his love for her music.
+
+A.D. has been working in hospitality since he was a teenager. He fell in love with hospitality at age 14, and since then, he's worked all through the city: college events, fine dining, even bartending at a retirement center. But Eem, where he started as a server and now bartends full-time, has been his favorite. It's fast-paced, full of energy, and the staff is truly a team. During those rushes, EEM transforms into what he calls a "high-energy machine," and he thrives as a key part of it. Comfort in chaos. Of course, not every moment is perfectly polished. He laughed as he recalled one night behind the bar, feeling a little too confident with the cocktail shaker, only to smack himself square in the forehead. The result? A bright blue Band-Aid and an early end to his shift. It's those moments—both chaotic and comical—that make the job feel real, and memorable.
+
+Still, change is calling. After his first real vacation to Chicago, he knew it was time. Portland will always be home, but A.D. wishes to see more, meet new people, and experience more of the world. Chicago's vibe, especially downtown, felt like it was calling to him. Now he's planning to move, hoping to bring his bartending skills and upbeat attitude to a new city. When we asked what drew him to hospitality in the first place, his answer was simple: "I love talking to people." He's found confidence behind the bar, learned how to hold space for others, and grown into himself in the process.
+
+He also left us with a reminder that felt like the heart of everything he'd shared.
+"Tell the people you love that you love them. For real. Life's short."
+
+Back at the bar, the ice is rattling, the music is playing, and A.D. is already mixing whatever comes next.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 26, 2025',
+    emoji: '🍹',
+    slug: 'adrian-woodard',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '19',
+    personName: 'Tatum Keller',
+    songTitle: 'Apologize',
+    artist: 'One Republic',
+    location: 'Kaan Restaurant, Portland',
+    latitude: 45.5231,
+    longitude: -122.6765,
+    shortStory: '23-year-old Tatum moved from San Diego to Portland seeking change. She thrives in the fast-paced restaurant world and connects deeply with people, guided by her mottos: "Go in with intention, not expectation" and "Find joy in the mundane."',
+    fullStory: `We met 23-year-old Tatum at Kaan, a fine dining experience in Portland created by Chef Gregory Gourdet. Tatum played a huge part in crafting our night—memorizing Emily's long list of allergies, recommending unforgettable dishes, and making us feel fully cared for throughout the entire meal.
+
+When we asked what song reminded her of growing up, Tatum paused for a moment, then straight up sang the melody to us right there in the restaurant. A few taps on Spotify later—don't worry, Tatum, we got you—it turned out to be "Apologize" by OneRepublic. She first heard it around five years old in 2004 and remembered loving the way it sounded.
+
+Originally from San Diego, Tatum moved to Portland after falling in love with the city during a visit and deciding she needed a change. She's always worked in dining and finds comfort in the fast pace and controlled chaos of the restaurant world. She thrives on connection, enjoying the rhythm of ten-hour shifts and the chance to interact with people every day.
+
+When we asked what she's learned along the way, she told us: "Common sense is not as common as I thought it was." She's also learned how much people carry beneath the surface—and how powerful it can be to look a little deeper.
+
+She left us with two mottos she lives by:
+"Go in with intention, not expectation."
+"Find joy in the mundane."
+
+And somehow, her words hit just as hard as the meal itself.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 26, 2025',
+    emoji: '🍽️',
+    slug: 'tatum-keller',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '20',
+    personName: 'Nina Ella-Layla Shaktama',
+    songTitle: 'Yesterday Once More',
+    artist: 'The Carpenters',
+    location: 'Phaya Thai Restaurant, Portland',
+    latitude: 45.5127,
+    longitude: -122.6550,
+    shortStory: '33-year-old Nina, originally from Southern Thailand, first heard her song in an English class. Now she and her sister run a gluten-free Thai restaurant in Portland, recreating the comfort food of their childhood while accommodating dietary restrictions.',
+    fullStory: `We met 33-year-old Nina at Phaya, a bright and stylish gluten-free Thai restaurant in Portland that she runs with her sister. The space had a calm, welcoming vibe: open layout, soft LED lights, and a kind of energy that makes you want to stay a little longer. Nina greeted us with a warm smile and friendly openness. "I'm not very good at English," she gently admitted, "but I will try." And try she did, offering a story full of care and memory.
+
+When we asked what song reminded her of growing up, she hesitated, clear in her mind but struggling to remember the name. Then she began humming, even turning to a coworker, trying to place the melody. When it clicked, "Yesterday Once More" by the Carpenters, she lit up. Originally from Surat Thani in Southern Thailand, Nina first heard the song around 8 years old. Her English teacher played it during a lesson, using its lyrics to help students understand grammar and pronunciation. For Nina, it wasn't just a song; it was her first real connection to the English language. Thesoft vocals and nostalgic tone take her back to school in Thailand, reminding Nina of her roots and how far she has come.
+
+The restaurant itself carries similar echoes of childhood and cultural roots. Nina and her sister, Wala Shai, were inspired by the fast-casual Thai meals their parents used to treat them to when they were young. When they moved to Portland just over a year ago, they wanted to recreate that. And because Wala is gluten free, they made sure Phaya would be a place where people with dietary restrictions could still enjoy comforting Thai flavors without compromise.
+
+Nina has built something new in a city far from where she started. Her restaurant, Phaya, feels warm and inviting, filled with the same kind of comfort and care that shaped her early memories. In a way, it's like that Carpenters song—gentle, familiar, and full of heart. Even across languages and continents, music and food have a way of staying with us, reminding us where we came from and how far we've traveled.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 28, 2025',
+    emoji: '🍜',
+    slug: 'nina-ella-layla-shaktama',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '21',
+    personName: 'Zach McKinley',
+    songTitle: 'This is the Day',
+    artist: 'The The',
+    location: 'Brain Dead Store, Portland',
+    latitude: 45.5231,
+    longitude: -122.6410,
+    shortStory: '33-year-old Zach turned his high school screen-printing hobby into a decade-long career in retail and fashion. His love for "This is the Day" began during a casual day in Newport Beach and remains his perfect summer soundtrack.',
+    fullStory: `On our final day in Portland, we took a break from chasing waterfalls and tourist attractions to simply wander through the city. That's when we met 33-year-old Zach at Brain Dead, a storefront that exudes effortless style. Inside, it felt like art had come alive in clothing form, with unique pieces on every hanger. Zach had an easygoing, friendly energy that made us want to learn more. Before we could even ask, he was already sharing his favorite stops along the Columbia River Gorge and giving tips for the drive back.
+
+When asked what song reminded him of growing up, Zach answered without hesitation. "This is the Day" by The The. He first heard it at around 13-years-old while hanging out in Newport Beach. It was a casual moment, just hanging around the beach town on a nice day, when he heard the song and had to ask someone what it was. Since then, he says it has stuck with him as a go-to summer track. Its minimal vocals allows the sound itself to flow through, uplifting and the perfect pick me up. "It guides you through the day in a good way," he told us.
+
+Zach grew up in Orange, California, not far from where that beach memory stemmed from. His journey into clothing fashion started right in high school with screen printing: making bootleg shirts, printing merch for friends, and a desire to wear something he created. That creative expression eventually led to a decade-long career in retail, manufacturing, and management. It took him to Portland seven years ago when REI asked him run their downtown location before it eventually shut down.
+
+These days, only a few weeks into working at Brain Dead, he thinks it already feels right. The clothing expression, and mostly conversations with different people keep him inspired and in the industry. Zach doesn't know what the next few years hold, but for now, he's living in the moment. He carries the same feeling of "This is the Day," taking each day as new, uplifting, and part of the journey.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 28, 2025',
+    emoji: '👕',
+    slug: 'zach-mckinley',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '22',
+    personName: 'Deja Indigo Yerger',
+    songTitle: 'Rocket',
+    artist: 'The Smashing Pumpkins',
+    location: 'Mutantis Brewery, Portland',
+    latitude: 45.5390,
+    longitude: -122.6510,
+    shortStory: '42-year-old Deja founded Mutantis, a queer and trans-owned gluten-free vegan brewery, as a space for people to be themselves. Though the brewery is closing, she\'s transitioning to a new career as an electrologist to continue providing inclusive, affirming care.',
+    fullStory: `We only stepped into Mutantis Brewery looking for a bathroom while waiting for food, but what we found was something far more unexpected: a space pulsing with personality. The second we walked in, we knew we found something special. Neon tape lined the walls, handmade signs hung like battle flags, and a quiet stillness in the air that only exists when something is nearing its end. The bar was closing.
+
+That's where we met 42-year-old Deja Indigo Yerger, who founded Mutantis in 2019 and opened it to the public in 2020. A queer- and trans-owned, gluten-free vegan brewery, it was built with intention. Not to be mainstream or to make a fortune, but rather to create a space where people could be unapologetically themselves. "I wouldn't be the person I am today if I'd never done this," she told us.
+
+When we asked what song that reminded Deja of growing up, her answer came easily: "Rocket" by The Smashing Pumpkins. She first heard it in middle school, and the lyrics and meaning has stayed with her ever since. "Consumed the love to power the hate/And only powers my escape," she recited. That line in particular became a mantra, anchoring her back to childhood and the "sense of wanting to escape something from my life" she explained. For Deja, it was about finding a way out of whatever box the world continuously tried to place her in. It's a song about resistance, movement, and the fight to say true to yourself, even if it goes against what is conventional.
+
+Deja's love for beer began in her early twenties, before being diagnosed with celiac disease. Rather than give it up, she took it as a challenge that pushed her forward to create gluten-free beer when no one else was. It wasn't about capitalizing on a niche. It was about survival and creating something inclusive for people like her. Though Mutantis never found financial success, it became something meaningful nonetheless. Through it, Deja built deep friendships, found community, and created a space that remained radically open even in the face of hate.
+
+Now, with the bar preparing to close, Deja is turning to something new. She's training to become an electrologist, hoping to offer affirming, personal care, especially to fellow trans people who deserve to feel safe and comfortable in their own bodies. It's work that could be both more sustainable and fulfilling in a world that continues to question her identity. Though the doors of Mutantis may be closing, her search for community, purpose, and connection continues.
+
+Before we left, we asked if she had any final words to share. "Get off Facebook. Get off Instagram. Get off TikTok. Get off Reddit. Get off Tumblr. Get off everything owned by billionaires." Even in her closing thoughts, Deja's spirit shone through: unfiltered, unwavering, and still fighting to create the kind of world that is deserved.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 28, 2025',
+    emoji: '🍺',
+    slug: 'deja-indigo-yerger',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '23',
+    personName: 'Lilith Hope',
+    songTitle: 'The Ballad of Davy Crockett',
+    artist: 'Bill Hayes',
+    location: 'Neighborhood Bar, Portland',
+    latitude: 45.5370,
+    longitude: -122.6500,
+    shortStory: '54-year-old Lilith has lived in 33 different places, following her codebreaker father\'s IBM career. Her song connects her to Appalachian family roots, while her global experiences have shaped her spiritual views and definition of family.',
+    fullStory: `We met Lilith Hope on a rainy Portland afternoon at a neighborhood bar nearing its final summer. She was there to see an old friend, the bar's proprietor, and share recent studies she'd completed—part of a larger personal journey through faith, ancestry, and global history. Though she works as a federal employee, Lilith spoke more like a philosopher, a truth-seeker, a storyteller.
+
+When we asked what song reminded her of growing up, she paused only briefly before naming "The Ballad of Davy Crockett." Her mother bought her the 45 rpm single in 1978, and Lilith remembers the way her mom would sing it often. "She wanted to be a mountain woman," she told us with a grin. That dream traced back through generations—her family came from the Appalachian Mountains, moved down to Georgia during the Dust Bowl, and carried with them their songs, stories, and deeply rooted traditions. Though the tune came from a Disney show, it captured something more personal: a heritage of resilience, pride, and survival.
+
+Lilith is 54 and has lived in 33 different places, from the United States to Russia to Kyrgyzstan—a country she holds close to her heart and has tattooed on her chest. "I'm a sojourner," she told us. Her father worked for IBM, a codebreaker during the Cold War and one of the original engineers behind the ENIAC computer. His job meant constant moves—"IBM stood for 'I've Been Moved,'" she joked—but it also exposed Lilith to different cultures, languages, and a global view of history.
+
+She's spent much of her life studying the stories we inherit—how we got here, what keeps repeating, and how we might find peace through understanding. Her spiritual views are shaped by curiosity more than doctrine; she's explored many faiths and now identifies as a solitary Christian, believing in a higher power and the ancestors who came before. For Lilith, family isn't about biology—it's about safety, trust, and shared love. Her partner, her children, her ex-wife, and the friends she's made along the way? All family.
+
+"Whatever's on the other side," she said quietly, "that's where our family is. And we want to be there with them. But for now, we live. We love. We remember."
+
+And somewhere in her memory, her mother still hums "Davy Crockett"—a song of mountains, movement, and making it through.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 28, 2025',
+    emoji: '🌧️',
+    slug: 'lilith-hope',
+    theme: 'What is a song that reminds you of growing up?'
+  },
+  {
+    id: '24',
+    personName: 'Oliver Riversattelich',
+    songTitle: 'Landslide',
+    artist: 'Fleetwood Mac',
+    location: 'Multnomah Falls, Oregon',
+    latitude: 45.5762,
+    longitude: -122.1158,
+    shortStory: '20-year-old Oliver works as a parking attendant at Multnomah Falls after returning to Portland from San Francisco. Their song, which they\'ve known since childhood, resonates differently now as they navigate life changes and find stability with their partners.',
+    fullStory: `We met 20 year-old Oliver just outside the iconic viewpoint at Multnomah Falls, with the mist still clinging to the mountainside and the air filled with the kind of quiet that only precedes rain. The roar of the waterfall echoed softly behind us, and a train was slowly approaching, making its way through the gorge. Oliver stood at the edge of the parking lot, wrapped in a bright orange safety vest and filled the air with an openness that drew us in to learning more of their story.
+
+When we asked what song reminded them of growing up, they thoughtfully paused, offering two. One was "Little Bug" by Army of the Navy. But the other came with more certainty: "Landslide" by Fleetwood Mac. They'd been listening to it since they were around six or seven, usually in their mom's old car. The lyrics didn't fully land at first, more so the melody drew them in, but the song lingered and grew in meaning with maturity and time.
+
+Years later, Oliver says the song resonates differently. They explain that "Landslide" is about growing older, facing change, and holding both the grief and the possibility that come with it. And for someone who's been moving through their own kind of shift, it makes sense. School hadn't been the right fit for Oliver. They came home to Portland after some time in San Francisco, moved back in with family, and reset to step out on their own again. Recently, they and their partners found a new apartment, leaving behind a chaotic roommate situation in hopes of something calmer and stable.
+
+Working as a parking lot attendant at Multnomah wasn't part of a grand plan. They just needed a job, but there was something full circle about being here. Oliver found themself back in a place they'd grown up so close to but never truly explored or appreciated. Change has always felt difficult for Oliver, but necessary. In a way, finding themself here felt like taking back time they hadn't used before, a second chance in both experience and intention.
+
+We asked what advice they'd give to the world, it was simple: Be kind. Everyone's doing their best, they said, and kindness costs nothing.
+
+As we walked away, the sound of water filled the air again, and the falls poured steadily along the cliffside. The moment felt like the song itself: soft, reflective, and quietly powerful. Like change, nature keeps moving, and so do we.`,
+    journey: 'Berkeley-Oregon Road Trip',
+    journeyDate: 'March 29, 2025',
+    emoji: '🏞️',
+    slug: 'oliver-riversattelich',
+    theme: 'What is a song that reminds you of growing up?'
   }
 ];
 

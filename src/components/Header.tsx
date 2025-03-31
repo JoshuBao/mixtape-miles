@@ -1,53 +1,92 @@
+'use client'
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
-export default function Header() {
+interface NavLinkProps {
+  href: string;
+  active: boolean;
+  children: React.ReactNode;
+}
+
+const NavLink = ({ href, active, children }: NavLinkProps) => {
+  return (
+    <Link 
+      href={href} 
+      className={`relative group px-3 py-2 ${
+        active 
+          ? 'text-white font-medium' 
+          : 'text-mixtape-paper hover:text-mixtape-tertiary'
+      } transition-colors duration-200`}
+    >
+      {children}
+      <span 
+        className={`absolute bottom-0 left-0 w-full h-0.5 bg-mixtape-tertiary transform transition-transform duration-300 ${
+          active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'
+        }`}
+      ></span>
+    </Link>
+  );
+};
+
+const Header = () => {
+  const pathname = usePathname();
+  const isActive = (path: string) => pathname === path;
+
   return (
     <header className="bg-gradient-to-r from-mixtape-primary via-mixtape-primary/80 to-mixtape-secondary p-6 shadow-md">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
-        <h1 className="text-3xl font-bold text-mixtape-paper mb-4 sm:mb-0">
-          <Link href="/" className="flex items-center">
-            <span className="mr-2">🎵</span>
-            <span className="relative">
-              Mixtape Miles
-              <span className="absolute -bottom-1 left-0 w-full h-1 bg-mixtape-tertiary rounded-full transform scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-            </span>
-          </Link>
-        </h1>
+        <Link 
+          href="/" 
+          className="flex items-center space-x-2 mb-4 sm:mb-0 group"
+        >
+          <div className="relative w-12 h-12 overflow-hidden rounded-full bg-white/10 p-1 shadow-lg">
+            <Image 
+              src="/MixtapeMiles.png" 
+              alt="Mixtape Miles Logo" 
+              width={48} 
+              height={48} 
+              className="object-contain transform transition-transform duration-300 group-hover:scale-110"
+            />
+          </div>
+          <span className="text-2xl font-bold text-mixtape-paper hover:text-white transition-colors duration-300">
+            Mixtape Miles
+          </span>
+        </Link>
+        
         <nav>
-          <ul className="flex space-x-6 text-mixtape-paper">
-            <li className="relative group">
-              <Link href="/" className="group-hover:text-mixtape-tertiary transition-colors duration-200">
+          <ul className="flex space-x-2 sm:space-x-6">
+            <li>
+              <NavLink href="/" active={isActive('/')}>
                 Home
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-mixtape-tertiary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              </Link>
+              </NavLink>
             </li>
-            <li className="relative group">
-              <Link href="/about" className="group-hover:text-mixtape-tertiary transition-colors duration-200">
+            <li>
+              <NavLink href="/about" active={isActive('/about')}>
                 About
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-mixtape-tertiary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              </Link>
+              </NavLink>
             </li>
-            <li className="relative group">
-              <Link href="/trips" className="group-hover:text-mixtape-tertiary transition-colors duration-200">
+            <li>
+              <NavLink href="/trips" active={isActive('/trips')}>
                 All Trips
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-mixtape-tertiary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              </Link>
+              </NavLink>
             </li>
-            <li className="relative group">
-              <Link href="/stories" className="group-hover:text-mixtape-tertiary transition-colors duration-200">
+            <li>
+              <NavLink href="/stories" active={isActive('/stories')}>
                 Stories
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-mixtape-tertiary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              </Link>
+              </NavLink>
             </li>
-            {/* <li className="relative group">
-              <Link href="/contact" className="group-hover:text-mixtape-tertiary transition-colors duration-200">
+            {/* Hidden until the contact page is ready */}
+            {/* <li>
+              <NavLink href="/contact" active={isActive('/contact')}>
                 Contact
-                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-mixtape-tertiary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              </Link>
+              </NavLink>
             </li> */}
           </ul>
         </nav>
       </div>
     </header>
   );
-} 
+};
+
+export default Header; 
