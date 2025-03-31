@@ -13,7 +13,6 @@ const MapComponent = dynamic(() => import('@/components/MapComponent'), {
 export default function Home() {
   const recentStories = getRecentStories();
   const berekeleyOregonStories = storiesData.filter(story => story.journey === 'Berkeley-Oregon Road Trip');
-  const latestStory = recentStories[0]; // First story is the most recent based on the sorting
   
   return (
     <div className="min-h-screen bg-mixtape-paper">

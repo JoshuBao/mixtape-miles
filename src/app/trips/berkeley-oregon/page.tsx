@@ -76,7 +76,7 @@ export default async function BerkeleyOregonPage() {
               <span className="text-gradient-vibrant inline">Journey Stories</span>
             </h2>
             <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
-              Explore the personal stories and songs we've collected along this beautiful coastal journey.
+              Explore the personal stories and songs we&apos;ve collected along this beautiful coastal journey.
             </p>
           </div>
           
