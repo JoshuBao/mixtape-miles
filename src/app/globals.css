@@ -40,11 +40,37 @@ body {
   transform: translateY(-5px);
 }
 
+/* Enhanced gradient styles */
 .gradient-text {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(to right, var(--primary), var(--secondary));
+}
+
+/* Custom gradient utilities to override Tailwind's defaults */
+.bg-gradient-primary {
+  background-image: linear-gradient(to right, #48A6A7, #FF5A5F) !important;
+}
+
+.bg-gradient-primary-to-secondary {
+  background-image: linear-gradient(to right, #48A6A7, #FF5A5F) !important;
+}
+
+.bg-gradient-secondary-to-tertiary {
+  background-image: linear-gradient(to right, #FF5A5F, #FFB400) !important;
+}
+
+.bg-gradient-tertiary-to-primary {
+  background-image: linear-gradient(to right, #FFB400, #48A6A7) !important;
+}
+
+/* Text gradients */
+.text-gradient-primary {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #48A6A7, #FF5A5F);
 }
 
 /* Leaflet map container - ensure light theme */
