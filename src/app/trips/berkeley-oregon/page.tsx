@@ -98,7 +98,9 @@ export default async function BerkeleyOregonPage() {
                 <p className="text-mixtape-text font-bold text-lg mb-1">Berkeley-Oregon Road Trip Playlist</p>
                 <p className="text-mixtape-subtitle mb-3">Listen to all the songs that define this journey</p>
                 <a 
-                  href="#" 
+                  href="https://open.spotify.com/playlist/4vKTm0MjZo3LX6Htk19TaV?si=7afcdfda514d4ec4" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center text-sm font-medium text-[#1DB954] hover:text-[#1DB954]/80 transition-colors duration-300"
                 >
                   Open in Spotify

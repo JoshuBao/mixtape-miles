@@ -375,7 +375,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Link 
               href="/stories" 
-              className="inline-block bg-gradient-to-r from-mixtape-primary to-mixtape-secondary text-white py-3 px-8 rounded-full hover:opacity-90 transition duration-300 shadow-lg transform hover:scale-105 font-bold"
+              className="inline-block bg-mixtape-dark text-mixtape-paper py-3 px-8 rounded-full hover:bg-mixtape-dark/90 transition duration-300 shadow-lg transform hover:scale-105 font-bold"
             >
               <span className="flex items-center">
                 <span>View All Stories</span>

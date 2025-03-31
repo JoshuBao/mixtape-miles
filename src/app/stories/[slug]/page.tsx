@@ -137,9 +137,19 @@ export default async function StoryPage(props: StoryPageProps) {
               </div>
               <div>
                 <p className="text-mixtape-text font-bold text-lg mb-1">&quot;{story.songTitle}&quot; by {story.artist}</p>
-                <p className="text-mixtape-subtitle mb-3">Listen to this song on Spotify</p>
+                <p className="text-mixtape-subtitle mb-3">
+                  {story.journey === 'Berkeley-Oregon Road Trip' 
+                    ? 'This song is part of our Berkeley-Oregon journey playlist'
+                    : 'Listen to this song on Spotify'
+                  }
+                </p>
                 <a 
-                  href="#" 
+                  href={story.journey === 'Berkeley-Oregon Road Trip' 
+                    ? "https://open.spotify.com/playlist/4vKTm0MjZo3LX6Htk19TaV?si=7afcdfda514d4ec4"
+                    : "#"
+                  }
+                  target="_blank"
+                  rel="noopener noreferrer" 
                   className="inline-flex items-center text-sm font-medium text-[#1DB954] hover:text-[#1DB954]/80 transition-colors duration-300"
                 >
                   Open in Spotify
