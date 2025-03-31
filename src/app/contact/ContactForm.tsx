@@ -77,7 +77,7 @@ export default function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div>
-          <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+          <label htmlFor="firstName" className="block text-sm font-medium text-mixtape-text mb-1">
             First Name
           </label>
           <input
@@ -86,14 +86,14 @@ export default function ContactForm() {
             name="firstName"
             value={formData.firstName}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+            className="w-full px-4 py-2 border border-mixtape-primary/20 rounded-lg focus:ring-2 focus:ring-mixtape-primary focus:border-mixtape-primary bg-mixtape-paper text-mixtape-text"
             required
             disabled={formState === 'submitting'}
           />
         </div>
         
         <div>
-          <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+          <label htmlFor="lastName" className="block text-sm font-medium text-mixtape-text mb-1">
             Last Name
           </label>
           <input
@@ -102,7 +102,7 @@ export default function ContactForm() {
             name="lastName"
             value={formData.lastName}
             onChange={handleChange}
-            className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+            className="w-full px-4 py-2 border border-mixtape-primary/20 rounded-lg focus:ring-2 focus:ring-mixtape-primary focus:border-mixtape-primary bg-mixtape-paper text-mixtape-text"
             required
             disabled={formState === 'submitting'}
           />
@@ -110,7 +110,7 @@ export default function ContactForm() {
       </div>
       
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+        <label htmlFor="email" className="block text-sm font-medium text-mixtape-text mb-1">
           Email
         </label>
         <input
@@ -119,14 +119,14 @@ export default function ContactForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+          className="w-full px-4 py-2 border border-mixtape-primary/20 rounded-lg focus:ring-2 focus:ring-mixtape-primary focus:border-mixtape-primary bg-mixtape-paper text-mixtape-text"
           required
           disabled={formState === 'submitting'}
         />
       </div>
       
       <div>
-        <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+        <label htmlFor="subject" className="block text-sm font-medium text-mixtape-text mb-1">
           Subject
         </label>
         <select
@@ -134,7 +134,7 @@ export default function ContactForm() {
           name="subject"
           value={formData.subject}
           onChange={handleChange}
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+          className="w-full px-4 py-2 border border-mixtape-primary/20 rounded-lg focus:ring-2 focus:ring-mixtape-primary focus:border-mixtape-primary bg-mixtape-paper text-mixtape-text"
           required
           disabled={formState === 'submitting'}
         >
@@ -147,7 +147,7 @@ export default function ContactForm() {
       </div>
       
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+        <label htmlFor="message" className="block text-sm font-medium text-mixtape-text mb-1">
           Message
         </label>
         <textarea
@@ -156,7 +156,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           rows={6}
-          className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+          className="w-full px-4 py-2 border border-mixtape-primary/20 rounded-lg focus:ring-2 focus:ring-mixtape-primary focus:border-mixtape-primary bg-mixtape-paper text-mixtape-text"
           required
           disabled={formState === 'submitting'}
         ></textarea>
@@ -169,22 +169,22 @@ export default function ContactForm() {
           type="checkbox"
           checked={formData.newsletter}
           onChange={handleCheckboxChange}
-          className="h-4 w-4 text-indigo-600 focus:ring-indigo-500 border-gray-300 rounded mt-1"
+          className="h-4 w-4 text-mixtape-primary focus:ring-mixtape-primary border-mixtape-primary/20 rounded mt-1"
           disabled={formState === 'submitting'}
         />
-        <label htmlFor="newsletter" className="ml-2 block text-sm text-gray-700 dark:text-gray-300">
+        <label htmlFor="newsletter" className="ml-2 block text-sm text-mixtape-subtitle">
           Sign me up for the newsletter to receive updates on new journeys and stories
         </label>
       </div>
       
       {formState === 'success' && (
-        <div className="p-4 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-lg">
+        <div className="p-4 bg-mixtape-mint text-mixtape-primary rounded-lg border-l-4 border-mixtape-primary">
           Thank you for your message! We&apos;ll get back to you soon.
         </div>
       )}
       
       {formState === 'error' && (
-        <div className="p-4 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-lg">
+        <div className="p-4 bg-mixtape-coral text-mixtape-secondary rounded-lg border-l-4 border-mixtape-secondary">
           {errorMessage}
         </div>
       )}
@@ -195,8 +195,8 @@ export default function ContactForm() {
           disabled={formState === 'submitting'}
           className={`w-full py-3 px-6 rounded-full transition duration-300 ${
             formState === 'submitting' 
-              ? 'bg-indigo-400 cursor-not-allowed' 
-              : 'bg-indigo-600 hover:bg-indigo-700 text-white'
+              ? 'bg-mixtape-primary/50 cursor-not-allowed' 
+              : 'bg-gradient-to-r from-mixtape-primary to-mixtape-secondary hover:from-mixtape-primary/90 hover:to-mixtape-secondary/90 text-mixtape-paper shadow-md hover:shadow-lg'
           }`}
         >
           {formState === 'submitting' ? 'Sending...' : 'Send Message'}
