@@ -16,7 +16,7 @@ export default function Home() {
   const latestStory = recentStories[0]; // First story is the most recent based on the sorting
   
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-mixtape-paper">
       <Header />
 
       {/* Hero Section with Dynamic Background */}
@@ -30,7 +30,7 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-mixtape-sky/70 via-mixtape-sky/50 to-mixtape-sky/70 z-10"></div>
         
         {/* Animated Musical Notes */}
         <div className="absolute inset-0 z-20 pointer-events-none">
@@ -41,7 +41,7 @@ export default function Home() {
           <div className="absolute bottom-1/4 right-1/5 animate-float-medium text-3xl opacity-60">🎹</div>
         </div>
         
-        <div className="relative z-30 text-center text-white p-6 max-w-5xl mx-auto">
+        <div className="relative z-30 text-center text-mixtape-text p-6 max-w-5xl mx-auto">
           <h1 className="text-6xl sm:text-7xl font-extrabold mb-6 tracking-tight">
             <span className="block transform hover:scale-105 transition-transform duration-300">Songs That Shaped Us</span>
           </h1>
@@ -51,17 +51,13 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link 
               href="/stories" 
-              className="bg-gradient-to-r from-mixtape-primary to-mixtape-primary/80 text-white font-bold py-4 px-8 rounded-full hover:from-mixtape-primary/90 hover:to-mixtape-primary/70 transition duration-300 transform hover:scale-105 shadow-lg"
-              style={{ 
-                background: 'linear-gradient(to right, #48A6A7, rgba(72, 166, 167, 0.8))',
-                color: 'white' 
-              }}
+              className="bg-gradient-to-r from-mixtape-primary to-mixtape-primary/80 text-mixtape-paper font-bold py-4 px-8 rounded-full hover:from-mixtape-primary/90 hover:to-mixtape-primary/70 transition duration-300 transform hover:scale-105 shadow-lg"
             >
               Explore the Playlists
             </Link>
             <Link 
               href="/trips" 
-              className="bg-transparent border-2 border-white text-white font-bold py-4 px-8 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-105"
+              className="bg-transparent border-2 border-mixtape-primary text-mixtape-primary font-bold py-4 px-8 rounded-full hover:bg-mixtape-primary/5 transition duration-300 transform hover:scale-105"
             >
               View Our Journeys
             </Link>
@@ -70,7 +66,7 @@ export default function Home() {
         
         {/* Vinyl Record Animation */}
         <div className="absolute -bottom-20 -right-20 w-80 h-80 z-20 opacity-70">
-          <div className="w-full h-full rounded-full bg-black border-8 border-gray-900 shadow-2xl animate-spin-slow">
+          <div className="w-full h-full rounded-full bg-mixtape-primary border-8 border-mixtape-sky shadow-2xl animate-spin-slow">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-20 h-20 rounded-full bg-gradient-to-r from-mixtape-primary/70 to-mixtape-secondary/70"></div>
             </div>
@@ -79,13 +75,13 @@ export default function Home() {
       </section>
 
       {/* Interactive Map Section with Hover Effects */}
-      <section className="py-16 px-6 bg-mixtape-light">
+      <section className="py-16 px-6 bg-mixtape-cream">
         <div className="container mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-4xl font-bold mb-4 text-mixtape-dark">
+            <h2 className="text-4xl font-bold mb-4 text-mixtape-text">
               Interactive Mixtape Map
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
               Explore our journey through music and stories. Each pin represents a location where we met someone 
               and collected their song. Follow the trails to discover the soundtrack of our travels.
             </p>
@@ -100,27 +96,27 @@ export default function Home() {
               <span className="text-2xl">🚐</span>
             </div>
             
-            <div className="bg-white rounded-xl shadow-xl p-4 transform transition duration-500 hover:shadow-2xl relative z-0">
+            <div className="bg-mixtape-paper rounded-xl shadow-xl p-4 transform transition duration-500 hover:shadow-2xl relative z-0">
               <MapComponent />
             </div>
           </div>
           
           <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
+            <div className="bg-mixtape-mint rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 rounded-full bg-mixtape-primary/20 flex items-center justify-center mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-mixtape-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-mixtape-dark">Explore Journeys</h3>
+                <h3 className="text-xl font-bold text-mixtape-text">Explore Journeys</h3>
               </div>
-              <p className="text-gray-600">
+              <p className="text-mixtape-subtitle">
                 Follow the colored paths to trace our different road trips and adventures. Each journey has its own theme and collection of stories.
               </p>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
+            <div className="bg-mixtape-coral rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 rounded-full bg-mixtape-secondary/20 flex items-center justify-center mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-mixtape-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -128,23 +124,23 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-mixtape-dark">Discover Stories</h3>
+                <h3 className="text-xl font-bold text-mixtape-text">Discover Stories</h3>
               </div>
-              <p className="text-gray-600">
+              <p className="text-mixtape-subtitle">
                 Click on any marker to read the full story behind each song and learn about the people we met along our journey.
               </p>
             </div>
             
-            <div className="bg-white rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
+            <div className="bg-mixtape-sunlight rounded-lg shadow-md p-6 transform transition duration-300 hover:shadow-lg hover:-translate-y-1">
               <div className="flex items-center mb-4">
                 <div className="w-10 h-10 rounded-full bg-mixtape-tertiary/20 flex items-center justify-center mr-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-mixtape-tertiary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-mixtape-dark">Listen to Songs</h3>
+                <h3 className="text-xl font-bold text-mixtape-text">Listen to Songs</h3>
               </div>
-              <p className="text-gray-600">
+              <p className="text-mixtape-subtitle">
                 Play the songs that define each person&apos;s story directly from the map. Create your own soundtrack as you explore our journeys.
               </p>
             </div>
@@ -153,111 +149,110 @@ export default function Home() {
       </section>
 
       {/* Current Journey with Enhanced UI */}
-      <section className="py-16 px-6 bg-mixtape-light">
+      <section className="py-16 px-6 bg-mixtape-sky">
         <div className="container mx-auto">
           <div className="text-center mb-10">
             <div className="inline-block mb-4 relative">
               <div className="w-16 h-16 rounded-full bg-gradient-to-r from-mixtape-tertiary to-mixtape-tertiary/80 flex items-center justify-center mx-auto">
-                <span className="text-white text-3xl">🚐</span>
+                <span className="text-mixtape-paper text-3xl">🚐</span>
               </div>
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-mixtape-secondary rounded-full flex items-center justify-center text-white text-xs font-bold animate-pulse">
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-mixtape-secondary rounded-full flex items-center justify-center text-mixtape-paper text-xs font-bold animate-pulse">
                 NOW
               </div>
             </div>
-            <h2 className="text-4xl font-bold mb-4 text-mixtape-dark">
-              Current Journey: Berkeley-Oregon Road Trip
+            <h2 className="text-4xl font-bold mb-4 text-mixtape-text">
+              Our Musical Journeys
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Follow our current adventure as we travel up the Pacific Coast, collecting songs and stories along the way.
+            <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
+              Follow our adventures as we collect songs and stories from travelers and locals around the world.
             </p>
           </div>
           
-          <div className="bg-white shadow-xl rounded-2xl overflow-hidden transform transition duration-500 hover:shadow-2xl">
-            <div className="md:flex">
-              <div className="md:w-2/5 relative">
-                <div className="h-72 md:h-full bg-gradient-to-br from-mixtape-primary to-mixtape-secondary flex items-center justify-center relative overflow-hidden">
-                  {/* Animated Cassette Tape */}
-                  <div className="w-64 h-40 bg-gray-900 rounded-lg relative transform rotate-12 shadow-2xl">
-                    <div className="absolute inset-2 bg-gray-800 rounded-sm flex flex-col items-center justify-center p-2">
-                      <div className="w-full h-6 bg-white/10 rounded mb-2 flex items-center justify-center">
-                        <span className="text-white text-xs font-mono">BERKELEY-OREGON MIX</span>
-                      </div>
-                      <div className="flex space-x-12">
-                        <div className="w-12 h-12 rounded-full border-4 border-gray-700 flex items-center justify-center">
-                          <div className="w-8 h-8 rounded-full bg-gray-700 animate-spin-slow"></div>
-                        </div>
-                        <div className="w-12 h-12 rounded-full border-4 border-gray-700 flex items-center justify-center">
-                          <div className="w-8 h-8 rounded-full bg-gray-700 animate-spin-slow"></div>
-                        </div>
-                      </div>
-                      <div className="absolute bottom-2 left-2 right-2 h-4 bg-white/5 rounded flex items-center justify-center">
-                        <span className="text-white text-[10px]">Songs That Remind Us of Growing Up</span>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Play Button */}
-                  <div className="absolute bottom-4 left-4 md:bottom-8 md:left-8 animate-pulse">
-                    <div className="bg-white/90 w-16 h-16 rounded-full shadow-xl flex items-center justify-center cursor-pointer hover:bg-white transition">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-mixtape-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
-                    <div className="text-white text-xs font-medium mt-2">PLAY MIXTAPE</div>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Current Trip */}
+            <div className="bg-mixtape-paper rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-mixtape-primary/20">
+              <div className="h-48 relative">
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-mixtape-primary via-mixtape-primary/80 to-mixtape-secondary">
+                  <span className="text-mixtape-paper text-3xl font-bold">CURRENT JOURNEY</span>
                 </div>
               </div>
-              
-              <div className="p-8 md:w-3/5">
-                <div className="bg-mixtape-tertiary/10 px-4 py-2 rounded-lg inline-block mb-4">
-                  <div className="text-mixtape-tertiary text-sm font-semibold flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    Trip Theme
-                  </div>
-                </div>
-                
-                <h3 className="text-3xl font-bold text-mixtape-dark mb-4">
-                  What is a song that reminds you of growing up?
-                </h3>
-                
-                <p className="text-lg text-gray-600 mb-6">
-                  From Berkeley to Portland, we&apos;re traveling up the Pacific Coast, meeting locals and fellow travelers, 
-                  asking about the songs that shaped their childhood. Each person 
-                  we meet adds a new track to our collaborative journey playlist.
+              <div className="p-6">
+                <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-mixtape-primary bg-mixtape-primary/10 rounded-full">March 2025</span>
+                <h2 className="text-2xl font-bold mb-2 text-mixtape-text">Berkeley-Oregon Road Trip</h2>
+                <p className="text-mixtape-subtitle mb-4">
+                  Theme: What is a song that reminds you of growing up?
                 </p>
-                
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                  <div className="bg-mixtape-light p-4 rounded-lg">
-                    <div className="text-gray-500 text-sm mb-1">Current Playlist</div>
-                    <div className="text-mixtape-dark font-bold text-xl flex items-center">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2 text-mixtape-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                      </svg>
-                      {berekeleyOregonStories.length} songs
-                    </div>
-                  </div>
-                  
-                  {latestStory && (
-                    <div className="bg-mixtape-light p-4 rounded-lg">
-                      <div className="text-gray-500 text-sm mb-1">Latest Addition</div>
-                      <div className="text-mixtape-dark font-bold">&quot;{latestStory.songTitle}&quot;</div>
-                      <div className="text-gray-600 text-sm">
-                        by {latestStory.artist} - {latestStory.personName} from {latestStory.location.split(',')[0]}
-                      </div>
-                    </div>
-                  )}
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-mixtape-subtitle font-medium">{berekeleyOregonStories.length} songs collected</span>
                 </div>
-                
-                <div className="flex">
-                  <Link href="/trips/berkeley-oregon" className="flex items-center bg-gradient-to-r from-mixtape-primary to-mixtape-secondary text-white py-3 px-6 rounded-lg hover:from-mixtape-primary/90 hover:to-mixtape-secondary/90 transition duration-300 shadow-md transform hover:scale-105">
-                    <span>View Full Journey</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </Link>
+                <Link href="/trips/berkeley-oregon" className="block w-full text-center bg-gradient-to-r from-mixtape-primary to-mixtape-secondary text-mixtape-paper py-2 px-4 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-md">
+                  View Journey
+                </Link>
+              </div>
+            </div>
+            
+            {/* Planned Trip */}
+            <div className="bg-mixtape-paper rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-mixtape-secondary/20">
+              <div className="h-48 relative">
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-mixtape-secondary via-mixtape-secondary/80 to-mixtape-tertiary">
+                  <span className="text-mixtape-paper text-3xl font-bold">PLANNED</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-mixtape-secondary bg-mixtape-secondary/10 rounded-full">Summer 2025</span>
+                <h2 className="text-2xl font-bold mb-2 text-mixtape-text">Southern California Coastal Tour</h2>
+                <p className="text-mixtape-subtitle mb-4">
+                  Theme: What song makes you feel most alive?
+                </p>
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-mixtape-subtitle font-medium">Coming Soon</span>
+                </div>
+                <div className="w-full py-2 px-4 text-center text-mixtape-subtitle/70 bg-mixtape-paper border border-mixtape-secondary/20 rounded-lg">
+                  Coming Soon
+                </div>
+              </div>
+            </div>
+            
+            {/* Planned Trip */}
+            <div className="bg-mixtape-paper rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-mixtape-primary/20">
+              <div className="h-48 relative">
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-mixtape-primary to-mixtape-tertiary">
+                  <span className="text-mixtape-paper text-3xl font-bold">PLANNED</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-mixtape-primary bg-mixtape-primary/10 rounded-full">Fall 2025</span>
+                <h2 className="text-2xl font-bold mb-2 text-mixtape-text">Deep South Music Tour</h2>
+                <p className="text-mixtape-subtitle mb-4">
+                  Theme: What song represents your hometown?
+                </p>
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-mixtape-subtitle font-medium">Coming Soon</span>
+                </div>
+                <div className="w-full py-2 px-4 text-center text-mixtape-primary/70 bg-mixtape-paper border border-mixtape-primary/20 rounded-lg">
+                  Planned
+                </div>
+              </div>
+            </div>
+            
+            {/* International Trip */}
+            <div className="bg-mixtape-paper rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-mixtape-tertiary/20">
+              <div className="h-48 relative">
+                <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-mixtape-tertiary to-mixtape-primary">
+                  <span className="text-mixtape-paper text-3xl font-bold">INTERNATIONAL</span>
+                </div>
+              </div>
+              <div className="p-6">
+                <span className="inline-block px-3 py-1 mb-4 text-xs font-semibold text-mixtape-tertiary bg-mixtape-tertiary/10 rounded-full">Winter 2025</span>
+                <h2 className="text-2xl font-bold mb-2 text-mixtape-text">Tokyo to Kyoto by Rail</h2>
+                <p className="text-mixtape-subtitle mb-4">
+                  Theme: What song transports you to another time?
+                </p>
+                <div className="flex justify-between items-center mb-4">
+                  <span className="text-mixtape-subtitle font-medium">In Planning</span>
+                </div>
+                <div className="w-full py-2 px-4 text-center text-mixtape-tertiary/70 bg-mixtape-paper border border-mixtape-tertiary/20 rounded-lg">
+                  Coming Soon
                 </div>
               </div>
             </div>
@@ -266,7 +261,7 @@ export default function Home() {
       </section>
 
       {/* Recent Entries with Improved UI */}
-      <section className="py-16 px-6 bg-white">
+      <section className="py-16 px-6 bg-mixtape-paper">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <div className="inline-block mb-4">
@@ -276,10 +271,10 @@ export default function Home() {
                 </svg>
               </span>
             </div>
-            <h2 className="text-4xl font-bold mb-4 text-mixtape-dark">
+            <h2 className="text-4xl font-bold mb-4 text-mixtape-text">
               Recent Song Stories
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-mixtape-subtitle max-w-3xl mx-auto">
               Discover the latest stories and songs we&apos;ve collected on our journey, each representing a unique person and their musical memories.
             </p>
           </div>
@@ -288,16 +283,16 @@ export default function Home() {
             {recentStories.map(story => (
               <div 
                 key={story.id} 
-                className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-2"
+                className="bg-mixtape-paper rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:shadow-xl hover:-translate-y-2"
               >
                 <div className="p-1">
                   <div className="h-40 bg-gradient-to-r from-mixtape-primary to-mixtape-secondary rounded-t-lg flex items-center justify-center">
-                    <div className="text-white text-6xl p-4">{story.emoji || '🎵'}</div>
+                    <div className="text-mixtape-paper text-6xl p-4">{story.emoji || '🎵'}</div>
                   </div>
                   
                   <div className="p-6">
                     <div className="flex justify-between items-start mb-4">
-                      <h3 className="text-xl font-bold text-mixtape-dark">
+                      <h3 className="text-xl font-bold text-mixtape-text">
                         {story.personName}
                       </h3>
                       <span className="bg-mixtape-primary/10 text-mixtape-primary text-xs px-3 py-1 rounded-full">
@@ -305,20 +300,20 @@ export default function Home() {
                       </span>
                     </div>
                     
-                    <div className="bg-mixtape-light p-3 rounded-lg mb-4">
+                    <div className="bg-mixtape-mint p-3 rounded-lg mb-4">
                       <div className="text-sm font-medium text-mixtape-primary mb-1">
                         Song Choice
                       </div>
-                      <p className="font-semibold text-mixtape-dark">&quot;{story.songTitle}&quot;</p>
-                      <p className="text-gray-600 text-sm">by {story.artist}</p>
+                      <p className="font-semibold text-mixtape-text">&quot;{story.songTitle}&quot;</p>
+                      <p className="text-mixtape-subtitle text-sm">by {story.artist}</p>
                     </div>
                     
-                    <p className="text-gray-600 mb-4 line-clamp-3">
+                    <p className="text-mixtape-subtitle mb-4 line-clamp-3">
                       {story.shortStory}
                     </p>
                     
                     <div className="flex justify-between items-center">
-                      <span className="text-xs text-gray-500">
+                      <span className="text-xs text-mixtape-subtitle">
                         {story.journeyDate}
                       </span>
                       <Link href={`/stories/${story.slug || story.id}`} className="text-mixtape-primary font-medium hover:text-mixtape-primary/80 inline-flex items-center">
@@ -335,7 +330,7 @@ export default function Home() {
           </div>
           
           <div className="text-center mt-12">
-            <Link href="/stories" className="inline-block bg-gradient-to-r from-mixtape-primary to-mixtape-secondary text-white py-4 px-8 rounded-full hover:from-mixtape-primary/90 hover:to-mixtape-secondary/90 transition duration-300 shadow-lg transform hover:scale-105">
+            <Link href="/stories" className="inline-block bg-gradient-to-r from-mixtape-primary to-mixtape-secondary text-mixtape-paper py-4 px-8 rounded-full hover:from-mixtape-primary/90 hover:to-mixtape-secondary/90 transition duration-300 shadow-lg transform hover:scale-105">
               View All Stories
             </Link>
           </div>

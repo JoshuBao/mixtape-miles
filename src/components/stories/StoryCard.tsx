@@ -7,32 +7,62 @@ type StoryCardProps = {
 };
 
 export default function StoryCard({ story, featured = false }: StoryCardProps) {
+  // Choose background color based on journey
+  const getBgColor = (journey: string) => {
+    if (journey === 'Berkeley-Oregon Road Trip') {
+      return 'from-mixtape-secondary to-mixtape-secondary/80';
+    }
+    // Default
+    return 'from-mixtape-primary to-mixtape-primary/80';
+  };
+
   return (
-    <div className={`bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 ${featured ? 'md:col-span-2' : ''}`}>
-      <div className="h-48 bg-gray-200 relative">
-        <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 bg-opacity-80">
-          <span className="text-white text-3xl">{story.emoji || '🎵'}</span>
+    <div className={`bg-mixtape-paper rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 ${featured ? 'md:col-span-2' : ''}`}>
+      <div className="h-48 relative">
+        <div className={`absolute inset-0 flex items-center justify-center bg-gradient-to-r ${getBgColor(story.journey)}`}>
+          <span className="text-mixtape-paper text-5xl">{story.emoji || '🎵'}</span>
         </div>
         {story.image && (
           <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: `url('${story.image}')` }} />
         )}
       </div>
       <div className="p-6">
-        <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">{story.location}</div>
-        <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-          &quot;{story.songTitle}&quot; - {story.artist}
+        <div className="flex justify-between items-start mb-3">
+          <div className="bg-mixtape-primary/10 text-mixtape-primary text-sm px-3 py-1 rounded-full font-medium">
+            {story.location.split(',')[0]}
+          </div>
+          <div className="text-xs text-mixtape-subtitle">{story.journeyDate}</div>
+        </div>
+        
+        <h3 className="text-xl font-bold mb-2 text-mixtape-text">
+          &quot;{story.songTitle}&quot;
         </h3>
-        <div className="mb-4 text-indigo-500 font-semibold">{story.personName}</div>
-        <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-4">
+        <div className="mb-2 text-mixtape-secondary font-semibold flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+          </svg>
+          by {story.artist}
+        </div>
+        
+        <div className="bg-mixtape-mint/30 p-3 rounded-lg mb-4">
+          <div className="text-sm font-medium text-mixtape-text/80 mb-1">Shared by</div>
+          <div className="font-bold text-mixtape-text">{story.personName}</div>
+        </div>
+        
+        <p className="text-mixtape-subtitle mb-4 line-clamp-3">
           {story.shortStory}
         </p>
+        
         {story.slug && (
           <div className="mt-4">
             <Link 
               href={`/stories/${story.slug}`} 
-              className="text-indigo-600 dark:text-indigo-400 font-medium hover:text-indigo-800 dark:hover:text-indigo-300"
+              className="inline-flex items-center px-4 py-2 rounded-full bg-mixtape-primary/10 text-mixtape-primary font-medium hover:bg-mixtape-primary/20 transition-colors duration-300"
             >
-              Read Full Story →
+              <span>Read Full Story</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
             </Link>
           </div>
         )}

@@ -20,9 +20,16 @@ const createCustomIcon = (journey: string) => {
   return L.divIcon({
     className: 'custom-pin',
     html: `
-      <div style="background-color: ${color}; width: 30px; height: 30px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 3px 10px rgba(0,0,0,0.3); transform-origin: center bottom; transition: transform 0.3s;">
+      <div style="background-color: ${color}; width: 30px; height: 30px; border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 3px 10px rgba(0,0,0,0.2); transform-origin: center bottom; transition: transform 0.3s; animation: pulse 2s infinite;">
         <span style="color: white; font-size: 16px; font-weight: bold;">🎵</span>
       </div>
+      <style>
+        @keyframes pulse {
+          0% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+          100% { transform: scale(1); }
+        }
+      </style>
     `,
     iconSize: [30, 30],
     iconAnchor: [15, 15],
@@ -83,16 +90,16 @@ const MapComponent = () => {
   };
 
   return (
-    <div className="map-container relative">
-      <div className="journey-legend absolute top-4 right-4 z-10 bg-white p-3 rounded-lg shadow-md">
-        <h3 className="text-sm font-bold mb-2 text-mixtape-dark">Journey Legend</h3>
+    <div className="map-container relative bg-mixtape-paper">
+      <div className="journey-legend absolute top-4 right-4 z-10 bg-mixtape-paper p-3 rounded-lg shadow-md border-l-4 border-mixtape-tertiary">
+        <h3 className="text-sm font-bold mb-2 text-mixtape-text">Journey Legend</h3>
         {Object.keys(journeyColors).map(journey => (
-          <div key={journey} className="flex items-center mb-1">
+          <div key={journey} className="flex items-center mb-1 group">
             <div 
-              className="w-4 h-4 rounded-full mr-2" 
+              className="w-4 h-4 rounded-full mr-2 transition-transform duration-300 group-hover:scale-110" 
               style={{ backgroundColor: journeyColors[journey] }}
             ></div>
-            <span className="text-xs text-mixtape-dark">{journey}</span>
+            <span className="text-xs text-mixtape-text group-hover:text-mixtape-secondary transition-colors duration-300">{journey}</span>
           </div>
         ))}
       </div>
@@ -100,7 +107,12 @@ const MapComponent = () => {
       <MapContainer 
         center={getCenterPosition()} 
         zoom={6} 
-        style={{ height: '600px', width: '100%', borderRadius: '12px' }}
+        style={{ 
+          height: '600px', 
+          width: '100%', 
+          borderRadius: '12px',
+          backgroundColor: '#FEFEFE' // mixtape-paper
+        }}
         className="shadow-xl transition-all duration-300 hover:shadow-2xl"
       >
         <TileLayer
@@ -114,9 +126,9 @@ const MapComponent = () => {
             key={journeyName}
             positions={createJourneyPath(stories)}
             color={journeyColors[journeyName] || '#48A6A7'}
-            weight={3}
+            weight={4}
             opacity={0.7}
-            dashArray="5, 10"
+            dashArray="5, 8"
           />
         ))}
         
@@ -128,46 +140,62 @@ const MapComponent = () => {
             icon={createCustomIcon(story.journey)}
           >
             <Popup className="custom-popup">
-              <div className="p-2 max-w-sm">
+              <div className="p-3 max-w-sm bg-gradient-to-br from-mixtape-paper to-mixtape-cream rounded-lg">
                 <div className="flex items-center mb-3">
-                  <div className="text-2xl mr-2">{story.emoji || '🎵'}</div>
+                  <div className="text-2xl mr-2 bg-mixtape-primary/10 w-10 h-10 rounded-full flex items-center justify-center">{story.emoji || '🎵'}</div>
                   <div>
-                    <h3 className="font-bold text-lg text-mixtape-dark">{story.personName}</h3>
-                    <p className="text-sm text-gray-600">{story.location}</p>
+                    <h3 className="font-bold text-lg text-mixtape-text">{story.personName}</h3>
+                    <p className="text-sm text-mixtape-subtitle flex items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-3 w-3 mr-1 text-mixtape-secondary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      </svg>
+                      {story.location}
+                    </p>
                   </div>
                 </div>
                 
-                <div className="mb-3 p-3 bg-mixtape-light rounded-lg">
-                  <div className="text-sm font-medium text-mixtape-primary mb-1">Song Story</div>
+                <div className="mb-4 p-3 bg-mixtape-mint rounded-lg shadow-sm">
+                  <div className="text-sm font-medium text-mixtape-primary mb-1 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                    </svg>
+                    Song Story
+                  </div>
                   <div className="flex items-center">
-                    <div className="bg-mixtape-primary/20 p-2 rounded-full mr-3">
+                    <div className="bg-mixtape-primary/20 p-2 rounded-full mr-3 transform transition-transform hover:scale-110 duration-300">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-mixtape-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                       </svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-mixtape-dark">{story.songTitle}</h4>
-                      <p className="text-sm text-gray-600">{story.artist}</p>
+                      <h4 className="font-bold text-mixtape-text">&quot;{story.songTitle}&quot;</h4>
+                      <p className="text-sm text-mixtape-subtitle">by {story.artist}</p>
                     </div>
                   </div>
                 </div>
                 
-                <p className="text-sm mb-3">{story.shortStory}</p>
+                <div className="bg-mixtape-sunlight/50 p-3 rounded-lg mb-4">
+                  <p className="text-sm mb-3 text-mixtape-subtitle italic">&quot;{story.shortStory}&quot;</p>
+                </div>
                 
-                <div className="mb-3">
+                <div className="mb-4">
                   <AudioPlayer
                     src={story.theme || '#'}
                     onPlay={() => console.log("onPlay")}
                     customAdditionalControls={[]}
                     layout="horizontal-reverse"
                     customVolumeControls={[]}
-                    style={{ borderRadius: '8px', overflow: 'hidden' }}
+                    style={{ 
+                      borderRadius: '8px', 
+                      overflow: 'hidden',
+                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
+                    }}
                   />
                 </div>
                 
                 <a 
                   href={`/stories/${story.slug || story.id}`}
-                  className="block w-full text-center bg-mixtape-primary hover:bg-mixtape-primary/90 text-white font-medium py-2 px-4 rounded-lg transition duration-300"
+                  className="block w-full text-center bg-gradient-to-r from-mixtape-primary to-mixtape-secondary text-mixtape-paper font-medium py-2 px-4 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-md"
                 >
                   Read Full Story
                 </a>
