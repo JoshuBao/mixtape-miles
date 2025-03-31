@@ -4,7 +4,6 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import { storiesData } from '@/data/stories';
 import { StoryData } from '@/types/story';
-import AudioPlayer from 'react-h5-audio-player';
 import 'react-h5-audio-player/lib/styles.css';
 
 // Define pin colors based on journey
@@ -178,20 +177,22 @@ const MapComponent = () => {
                   <p className="text-sm mb-3 text-mixtape-subtitle italic">&quot;{story.shortStory}&quot;</p>
                 </div>
                 
-                <div className="mb-4">
-                  <AudioPlayer
-                    src={story.theme || '#'}
-                    onPlay={() => console.log("onPlay")}
-                    customAdditionalControls={[]}
-                    layout="horizontal-reverse"
-                    customVolumeControls={[]}
-                    style={{ 
-                      borderRadius: '8px', 
-                      overflow: 'hidden',
-                      boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
-                    }}
-                  />
-                </div>
+                {/* Replace audio player with Spotify playlist button */}
+                {story.journey === 'Berkeley-Oregon Road Trip' && (
+                  <div className="mb-4">
+                    <a 
+                      href="https://open.spotify.com/playlist/4vKTm0MjZo3LX6Htk19TaV?si=7afcdfda514d4ec4" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full text-center bg-[#1DB954] text-white font-medium py-2 px-4 rounded-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-md flex items-center justify-center"
+                    >
+                      <svg className="h-5 w-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                      </svg>
+                      Listen on Spotify
+                    </a>
+                  </div>
+                )}
                 
                 <a 
                   href={`/stories/${story.slug || story.id}`}
