@@ -28,6 +28,11 @@ export const storyImageMap: Record<string, string[]> = {
  * @returns The full path to the image
  */
 export const getStoryImagePath = (story: StoryData, index: number = 0): string | null => {
+  // Check if story has a slug before accessing the map
+  if (!story.slug) {
+    return null;
+  }
+  
   const images = storyImageMap[story.slug];
   
   if (!images || images.length === 0 || index >= images.length) {
@@ -43,6 +48,11 @@ export const getStoryImagePath = (story: StoryData, index: number = 0): string |
  * @returns Boolean indicating if the story has images
  */
 export const hasStoryImage = (story: StoryData): boolean => {
+  // Check if story has a slug before accessing the map
+  if (!story.slug) {
+    return false;
+  }
+  
   return !!storyImageMap[story.slug] && storyImageMap[story.slug].length > 0;
 };
 
@@ -52,5 +62,10 @@ export const hasStoryImage = (story: StoryData): boolean => {
  * @returns The number of images for the story
  */
 export const getStoryImageCount = (story: StoryData): number => {
+  // Check if story has a slug before accessing the map
+  if (!story.slug) {
+    return 0;
+  }
+  
   return storyImageMap[story.slug]?.length || 0;
 }; 

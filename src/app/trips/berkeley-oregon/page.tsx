@@ -4,7 +4,6 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import StoryCard from '@/components/stories/StoryCard';
 import { getStoriesByJourney } from '@/data/stories';
-import Image from 'next/image';
 
 export const metadata = {
   title: 'Berkeley-Oregon Road Trip | Mixtape Miles',

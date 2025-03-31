@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { StoryData } from '@/types/story';
-import { getStoryImagePath, hasStoryImage } from '@/data/imageMapping';
+import { getStoryImagePath } from '@/data/imageMapping';
 
 interface StoryImageProps {
   story: StoryData;
@@ -27,7 +27,7 @@ const StoryImage: React.FC<StoryImageProps> = ({
   showPlaceholder = true
 }) => {
   const imagePath = getStoryImagePath(story, index);
-  const hasImage = hasStoryImage(story);
+  // We directly use the imagePath to determine if an image exists
   
   const altText = alt || `Photo of ${story.personName} from ${story.location}`;
   
